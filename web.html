@@ -1,0 +1,2854 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"gmonit-collector.lenta.com/browser","errorBeacon":"gmonit-collector.lenta.com/browser","licenseKey":"0123456789abc","applicationID":"17592186045425","transactionName":"Z1RQZ0ZUWERZWllYXV4ef2V3GntWUVd+WEZVfVNdUFxYUGhYSlRxX19GQVtZWlJKFkRfVlVJ","queueTime":0,"applicationTime":74,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={"ajax":{"deny_list":["mc.yandex.ru","gmonit-collector.lenta.com"]}};(()=>{var e,t,r={9071:(e,t,r)=>{"use strict";r.d(t,{I:()=>n});var n=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(n=+i[1])},6562:(e,t,r)=>{"use strict";r.d(t,{P_:()=>p,Mt:()=>v,C5:()=>f,DL:()=>y,OP:()=>R,lF:()=>L,Yu:()=>E,Dg:()=>g,CX:()=>d,GE:()=>w,sU:()=>k});var n={};r.r(n),r.d(n,{agent:()=>T,match:()=>S,version:()=>A});var i=r(6797),o=r(909),a=r(8610);class s{constructor(e,t){try{if(!e||"object"!=typeof e)return(0,a.Z)("New setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,a.Z)("Setting a Configurable requires a model to set its initial properties");Object.assign(this,t),Object.entries(e).forEach((e=>{let[t,r]=e;const n=(0,o.q)(t);n.length&&r&&"object"==typeof r&&n.forEach((e=>{e in r&&((0,a.Z)('"'.concat(e,'" is a protected attribute and can not be changed in feature ').concat(t,".  It will have no effect.")),delete r[e])})),this[t]=r}))}catch(e){(0,a.Z)("An error occured while setting a Configurable",e)}}}const c={beacon:i.ce.beacon,errorBeacon:i.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},u={};function f(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!u[e])throw new Error("Info for ".concat(e," was never set"));return u[e]}function d(e,t){if(!e)throw new Error("All info objects require an agent identifier!");u[e]=new s(t,c),(0,i.Qy)(e,u[e],"info")}const l={allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},spa:{enabled:!0,harvestTimeSeconds:10}},h={};function p(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!h[e])throw new Error("Configuration for ".concat(e," was never set"));return h[e]}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");h[e]=new s(t,l),(0,i.Qy)(e,h[e],"config")}function v(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var r=p(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const m={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},b={};function y(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!b[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return b[e]}function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");b[e]=new s(t,m),(0,i.Qy)(e,b[e],"loader_config")}const E=(0,i.mF)().o;var T=null,A=null;if(navigator.userAgent){var x=navigator.userAgent,_=x.match(/Version\/(\S+)\s+Safari/);_&&-1===x.indexOf("Chrome")&&-1===x.indexOf("Chromium")&&(T="Safari",A=_[1])}function S(e,t){if(!T)return!1;if(e!==T)return!1;if(!t)return!0;if(!A)return!1;for(var r=A.split("."),n=t.split("."),i=0;i<n.length;i++)if(n[i]!==r[i])return!1;return!0}var O=r(5526),P=r(2374);const j="NRBA_SESSION_ID";function D(){if(!P.il)return null;try{let e;return null===(e=window.sessionStorage.getItem(j))&&(e=(0,O.ky)(16),window.sessionStorage.setItem(j,e)),e}catch(e){return null}}var N=r(8226);const C=e=>({customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(P._A?.performance?.timeOrigin||P._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+P._A.location,ptid:void 0,releaseIds:{},sessionId:1==v(e,"privacy.cookies_enabled")?D():null,xhrWrappable:"function"==typeof P._A.XMLHttpRequest?.prototype?.addEventListener,userAgent:n,version:N.q}),I={};function R(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!I[e])throw new Error("Runtime for ".concat(e," was never set"));return I[e]}function k(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");I[e]=new s(t,C(e)),(0,i.Qy)(e,I[e],"runtime")}function L(e){return function(e){try{const t=f(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},8226:(e,t,r)=>{"use strict";r.d(t,{q:()=>n});const n="1228.PROD"},9557:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(8610);const i={agentIdentifier:""};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},4329:(e,t,r)=>{"use strict";r.d(t,{L:()=>f,R:()=>c});var n=r(3752),i=r(7022),o=r(4045),a=r(2325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function f(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=Array.from(s[e]);function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)d(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((e=>{let[t]=e;a(t)})))}function d(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},3752:(e,t,r)=>{"use strict";r.d(t,{c:()=>d,ee:()=>u});var n=r(6797),i=r(3916),o=r(7022),a=r(6562),s="nr@context";let c=(0,n.fP)();var u;function f(){}function d(e){return(0,i.X)(e,s,l)}function l(){return new f}function h(){u.aborted=!0,u.backlog={}}c.ee?u=c.ee:(u=function e(t,r){var n={},c={},d={},p=!1;try{p=16===r.length&&(0,a.OP)(r).isolatedBacklog}catch(e){}var g={on:b,addEventListener:b,removeEventListener:y,emit:m,get:E,listeners:w,context:v,buffer:T,abort:h,aborted:!1,isBuffering:A,debugId:r,backlog:p?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function v(e){return e&&e instanceof f?e:e?(0,i.X)(e,s,l):l()}function m(e,r,n,i,o){if(!1!==o&&(o=!0),!u.aborted||i){t&&o&&t.emit(e,r,n);for(var a=v(n),s=w(e),f=s.length,d=0;d<f;d++)s[d].apply(a,r);var l=x()[c[e]];return l&&l.push([g,e,r,a]),a}}function b(e,t){n[e]=w(e).concat(t)}function y(e,t){var r=n[e];if(r)for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)}function w(e){return n[e]||[]}function E(t){return d[t]=d[t]||e(g,t)}function T(e,t){var r=x();g.aborted||(0,o.D)(e,(function(e,n){t=t||"feature",c[n]=t,t in r||(r[t]=[])}))}function A(e){return!!x()[c[e]]}function x(){return g.backlog}}(void 0,"globalEE"),c.ee=u)},9252:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(3752).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4045:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(9252);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},8544:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(2374);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];window.addEventListener(e,t,a(r))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];document.addEventListener(e,t,a(r))}},5526:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>a,M:()=>o,Rl:()=>i,ky:()=>s});var n=r(2374);function i(){var e=null,t=0,r=n._A?.crypto||n._A?.msCrypto;function i(){return e?15&e[t++]:16*Math.random()|0}r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,a="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",s="",c=0;c<a.length;c++)s+="x"===(o=a[c])?i().toString(16):"y"===o?(o=3&i()|8).toString(16):o;return s}function o(){return s(16)}function a(){return s(32)}function s(e){var t=null,r=0,n=self.crypto||self.msCrypto;n&&n.getRandomValues&&Uint8Array&&(t=n.getRandomValues(new Uint8Array(31)));for(var i=[],o=0;o<e;o++)i.push(a().toString(16));return i.join("");function a(){return t?15&t[r++]:16*Math.random()|0}}},2053:(e,t,r)=>{"use strict";r.d(t,{B:()=>n,z:()=>i});const n=(new Date).getTime();function i(){return Math.round(performance.now())}},8283:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,L:()=>s});var n=r(6562),i=r(2053),o={};function a(e,t,r){void 0===r&&(r=(0,i.z)()+(0,n.OP)(e).offset),o[e]=o[e]||{},o[e][t]=r}function s(e,t,r,n){const i=e.sharedContext.agentIdentifier;var a=o[i]?.[r],s=o[i]?.[n];void 0!==a&&void 0!==s&&e.store("measures",t,{value:s-a})}},2545:(e,t,r)=>{"use strict";r.d(t,{L:()=>c});var n=r(9071),i=r(8544),o=r(8305),a=r(2374),s=r(6998);if(a.v6){a._A.cleanupTasks=[];const e=a._A.close;a._A.close=()=>{for(let e of a._A.cleanupTasks)e();e()}}function c(e,t){if(a.il)if(t)(0,s.N)(e,!0),(0,i.bP)("pagehide",e);else{var r=(0,o.Z)(e);!n.I||navigator.sendBeacon?(0,i.bP)("pagehide",r):(0,i.bP)("beforeunload",r),(0,i.bP)("unload",r)}else a.v6&&a._A.cleanupTasks.push(e)}},6368:(e,t,r)=>{"use strict";r.d(t,{e:()=>o});var n=r(2374),i={};function o(e){if(e in i)return i[e];if(0===(e||"").indexOf("data:"))return{protocol:"data"};let t;var r=n._A?.location,o={};if(n.il)t=document.createElement("a"),t.href=e;else try{t=new URL(e,r.href)}catch(e){return o}o.port=t.port;var a=t.href.split("://");!o.port&&a[1]&&(o.port=a[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===a[0]?"443":"80"),o.hostname=t.hostname||r.hostname,o.pathname=t.pathname,o.protocol=a[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var s=!t.protocol||":"===t.protocol||t.protocol===r.protocol,c=t.hostname===r.hostname&&t.port===r.port;return o.sameOrigin=s&&(!t.hostname||c),"/"===o.pathname&&(i[e]=o),o}},8610:(e,t,r)=>{"use strict";function n(e,t){console&&console.warn&&"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},3916:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},2374:(e,t,r)=>{"use strict";r.d(t,{_A:()=>o,il:()=>n,lW:()=>a,v6:()=>i});const n=Boolean("undefined"!=typeof window&&window.document),i=Boolean("undefined"!=typeof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator);let o=(()=>{if(n)return window;if(i){if("undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope)return globalThis;if(self instanceof WorkerGlobalScope)return self}throw new Error('New Relic browser agent shutting down due to error: Unable to locate global scope. This is possibly due to code redefining browser global variables like "self" and "window".')})();function a(){return o}},7022:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t){var r=[],i="",o=0;for(i in e)n.call(e,i)&&(r[o]=t(i,e[i]),o+=1);return r}},8305:(e,t,r)=>{"use strict";r.d(t,{Z:()=>o});var n=r(8683),i=r.n(n);function o(e){var t,r=!1;return function(){return r?t:(r=!0,t=e.apply(this,i()(arguments)))}}},2438:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(3752);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},2650:(e,t,r)=>{"use strict";r.d(t,{K:()=>a,b:()=>o});var n=r(8544);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},6797:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>f,mF:()=>s});var n=r(2053),i=r(2374);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function u(e,t){a()[e]=t}function f(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},6998:(e,t,r)=>{"use strict";r.d(t,{N:()=>i,e:()=>o});var n=r(8544);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return void(0,n.iz)("visibilitychange",(function(){if(t){if("hidden"!=document.visibilityState)return;e()}e(document.visibilityState)}))}function o(){return"hidden"===document.visibilityState?-1:1/0}},6408:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(2374);function i(){return"function"==typeof n._A?.PerformanceObserver}},8675:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.ajax},8322:(e,t,r)=>{"use strict";r.d(t,{A:()=>i,t:()=>n});const n=r(2325).D.jserrors,i="nr@seenError"},6034:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(2325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6486:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageAction},2484:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewEvent},6382:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewTiming},2628:(e,t,r)=>{"use strict";r.r(t),r.d(t,{ADD_EVENT_LISTENER:()=>g,BST_RESOURCE:()=>a,BST_TIMER:()=>l,END:()=>u,FEATURE_NAME:()=>i,FN_END:()=>d,FN_START:()=>f,ORIG_EVENT:()=>p,PUSH_STATE:()=>h,RESOURCE:()=>s,RESOURCE_TIMING_BUFFER_FULL:()=>o,START:()=>c});var n=r(6562);const i=r(2325).D.sessionTrace,o="resourcetimingbufferfull",a="bstResource",s="resource",c="-start",u="-end",f="fn"+c,d="fn"+u,l="bstTimer",h="pushState",p=n.Yu.EV,g="addEventListener"},755:(e,t,r)=>{"use strict";r.r(t),r.d(t,{BODY:()=>T,CB_END:()=>A,CB_START:()=>u,END:()=>E,FEATURE_NAME:()=>i,FETCH:()=>_,FETCH_BODY:()=>m,FETCH_DONE:()=>v,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>l,INTERACTION_API:()=>f,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>x,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>d,SPA_NODE:()=>h,START:()=>w,originalSetTimeout:()=>y});var n=r(6562);r(2374);const i=r(2325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",f="api-ixn-",d="remaining",l="interaction",h="spaNode",p="jsonpNode",g="fetch-start",v="fetch-done",m="fetch-body-",b="jsonp-end",y=n.Yu.ST,w="-start",E="-end",T="-body",A="cb"+E,x="jsTime",_="fetch"},1509:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6562),i=r(3752),o=r(2384),a=r(6797);class s{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,n.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=r,this.blocked=!1,this.checkConfiguration()}checkConfiguration(){if(!(0,n.lF)(this.agentIdentifier)){let e={...(0,a.gG)().info?.jsAttributes};try{e={...e,...(0,n.C5)(this.agentIdentifier)?.jsAttributes}}catch(e){}(0,o.j)(this.agentIdentifier,{...(0,a.gG)(),info:{...(0,a.gG)().info,jsAttributes:e}})}}}},2384:(e,t,r)=>{"use strict";r.d(t,{j:()=>w});var n=r(8683),i=r.n(n),o=r(2325),a=r(6562),s=r(9252),c=r(7022),u=r(3752),f=r(2053),d=r(4329),l=r(2650),h=r(2374),p=r(8610),g=r(6034);function v(e){["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&e.api[t](...n)}))}(t,...n)}}))}var m=r(6797);const b={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa]};const y={};function w(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2?arguments[2]:void 0,w=arguments.length>3?arguments[3]:void 0,{init:E,info:T,loader_config:A,runtime:x={loaderType:n},exposed:_=!0}=t;const S=(0,m.gG)();let O={};return T||(E=S.init,T=S.info,A=S.loader_config,O=S),h.v6&&(T.jsAttributes={...T.jsAttributes,isWorker:!0}),(0,a.CX)(e,T),(0,a.Dg)(e,E||{}),(0,a.GE)(e,A||{}),(0,a.sU)(e,x),function(e,t,n){n||(0,d.R)(e,"api"),v(t);var m=u.ee.get(e),b=m.get("tracer"),y="api-",w=y+"ixn-";function E(){}(0,c.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(e,r){t[r]=A(y,r,!0,"api")})),t.addPageAction=A(y,"addPageAction",!0,o.D.pageAction),t.setCurrentRouteName=A(y,"routeName",!0,o.D.spa),t.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,a.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(y,"setPageViewName",!0,"api")()},t.setCustomAttribute=function(t,r){const n=(0,a.C5)(e);return(0,a.CX)(e,{...n,jsAttributes:{...n.jsAttributes,[t]:r}}),A(y,"setCustomAttribute",!0,"api")()},t.interaction=function(){return(new E).get()};var T=E.prototype={createTracer:function(e,t){var r={},n=this,i="function"==typeof t;return(0,s.p)(w+"tracer",[(0,f.z)(),e,r],n,o.D.spa,m),function(){if(b.emit((i?"":"no-")+"fn-start",[(0,f.z)(),n,i],r),i)try{return t.apply(this,arguments)}catch(e){throw b.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],r),e}finally{b.emit("fn-end",[(0,f.z)()],r)}}}};function A(e,t,r,n){return function(){return(0,s.p)(g.xS,["API/"+t+"/called"],void 0,o.D.metrics,m),(0,s.p)(e+t,[(0,f.z)()].concat(i()(arguments)),r?null:this,n,m),r?void 0:this}}function x(){r.e(439).then(r.bind(r,5692)).then((t=>{let{setAPI:r}=t;r(e),(0,d.L)(e,"api")})).catch((()=>(0,p.Z)("Downloading runtime APIs failed...")))}(0,c.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(e,t){T[t]=A(w,t,void 0,o.D.spa)})),t.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,s.p)(g.xS,["API/noticeError/called"],void 0,o.D.metrics,m),(0,s.p)("err",[e,(0,f.z)(),!1,t],void 0,o.D.jserrors,m)},h.v6?x():(0,l.b)((()=>x()),!0)}(e,O,w),(0,m.Qy)(e,S,"api"),(0,m.Qy)(e,_,"exposed"),(0,m.EZ)("activatedFeatures",y),(0,m.EZ)("setToken",(t=>function(e,t){var r=u.ee.get(t);e&&"object"==typeof e&&((0,c.D)(e,(function(e,t){if(!t)return(b[e]||[]).forEach((t=>{(0,s.p)("block-"+e,[],void 0,t,r)}));y[e]||((0,s.p)("feat-"+e,[],void 0,b[e],r),y[e]=!0)})),(0,d.L)(t,o.D.pageViewEvent))}(t,e))),O}},909:(e,t,r)=>{"use strict";r.d(t,{Z:()=>i,q:()=>o});var n=r(2325);function i(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}function o(e){return e===n.D.jserrors?[]:["auto"]}},2325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8}},8683:e=>{e.exports=function(e,t,r){t||(t=0),void 0===r&&(r=e?e.length:0);for(var n=-1,i=r-t||0,o=Array(i<0?0:i);++n<i;)o[n]=e[t+n];return o}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return i.d(t,{a:t}),t},i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",193:"session_trace-aggregate",317:"jserrors-aggregate",348:"page_view_timing-aggregate",439:"async-api",729:"lazy-loader",786:"page_view_event-aggregate",873:"spa-aggregate",898:"ajax-aggregate"}[e]||e)+"."+{78:"1ef08094",147:"56d9a464",193:"ada8b15b",317:"64f61365",348:"ced8c919",439:"61caf4d9",729:"37550b27",786:"46b69e61",862:"e74e95d2",873:"7222cbb6",898:"e6085a9a"}[e]+"-current.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),f=0;f<u.length;f++){var d=u[f];if(d.getAttribute("src")==r||d.getAttribute("data-webpack")==t+o){s=d;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var l=(t,n)=>{s.onerror=s.onload=null,clearTimeout(h);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},h=setTimeout(l.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=l.bind(null,s.onerror),s.onload=l.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={80:0,886:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=window.webpackChunkNRBA=window.webpackChunkNRBA||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})();var o={};(()=>{"use strict";i.r(o);var e=i(2325),t=i(6562);const r=Object.values(e.D);function n(e){const n={};return r.forEach((r=>{n[r]=function(e,r){return!1!==(0,t.Mt)(r,"".concat(e,".enabled"))}(r,e)})),n}var a=i(2384),s=i(909),c=i(9252),u=i(2053),f=i(8283),d=i(4329),l=i(1509),h=i(2650),p=i(2374),g=i(8610);class v extends l.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.hasAggregator=!1,this.auto=n,this.abortHandler,n&&(0,d.R)(e,r)}importAggregator(){if(this.hasAggregator||!this.auto)return;this.hasAggregator=!0;const e=async()=>{try{const{lazyLoader:e}=await i.e(729).then(i.bind(i,8110)),{Aggregate:t}=await e(this.featureName,"aggregate");new t(this.agentIdentifier,this.aggregator)}catch(e){(0,g.Z)("Downloading ".concat(this.featureName," failed...")),this.abortHandler?.()}};p.v6?e():(0,h.b)((()=>e()),!0)}}var m,b,y,w=i(2484);class E extends v{constructor(e,r){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,r,w.t,n),(0,f.B)(e,"starttime",(0,t.OP)(e).offset),(0,f.B)(e,"firstbyte",u.B),(0,h.K)((()=>this.measureDomContentLoaded())),(0,h.b)((()=>this.measureWindowLoaded()),!0),this.importAggregator()}measureWindowLoaded(){var r=(0,u.z)();(0,f.B)(this.agentIdentifier,"onload",r+(0,t.OP)(this.agentIdentifier).offset),(0,c.p)("timing",["load",r],void 0,e.D.pageViewTiming,this.ee)}measureDomContentLoaded(){(0,f.B)(this.agentIdentifier,"domContent",(0,u.z)()+(0,t.OP)(this.agentIdentifier).offset)}}m=E,b="featureName",y=w.t,(b=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(b))in m?Object.defineProperty(m,b,{value:y,enumerable:!0,configurable:!0,writable:!0}):m[b]=y;var T=i(9557),A=i(7022);class x extends T.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,A.D)(e,(function(e,r){t[e]=_(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,A.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=_(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=S(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=_(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=O(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function _(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=S(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function S(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function O(e){return"object"!=typeof e?[]:(0,A.D)(e,P)}function P(e,t){return t}var j=i(6797),D=i(5526),N=i(2438);var C,I=i(6998),R=i(8544),k=i(6382),L=-1,H=function(e){addEventListener("pageshow",(function(t){t.persisted&&(L=t.timeStamp,e(t))}),!0)},z=function(){return window.performance&&performance.getEntriesByType&&performance.getEntriesByType("navigation")[0]},M=function(){var e=z();return e&&e.activationStart||0},B=function(e,t){var r=z(),n="navigate";return L>=0?n="back-forward-cache":r&&(n=document.prerendering||M()>0?"prerender":document.wasDiscarded?"restore":r.type.replace(/_/g,"-")),{name:e,value:void 0===t?-1:t,rating:"good",delta:0,entries:[],id:"v3-".concat(Date.now(),"-").concat(Math.floor(8999999999999*Math.random())+1e12),navigationType:n}},F=function(e,t,r){try{if(PerformanceObserver.supportedEntryTypes.includes(e)){var n=new PerformanceObserver((function(e){Promise.resolve().then((function(){t(e.getEntries())}))}));return n.observe(Object.assign({type:e,buffered:!0},r||{})),n}}catch(e){}},U=function(e,t,r,n){var i,o;return function(a){t.value>=0&&(a||n)&&((o=t.value-(i||0))||void 0===i)&&(i=t.value,t.delta=o,t.rating=function(e,t){return e>t[1]?"poor":e>t[0]?"needs-improvement":"good"}(t.value,r),e(t))}},V=function(e){var t=function(t){"pagehide"!==t.type&&"hidden"!==document.visibilityState||e(t)};addEventListener("visibilitychange",t,!0),addEventListener("pagehide",t,!0)},W=function(e){document.prerendering?addEventListener("prerenderingchange",(function(){return e()}),!0):e()},q=(new Date,0),G=1/0,X=0,$=function(e){e.forEach((function(e){e.interactionId&&(G=Math.min(G,e.interactionId),X=Math.max(X,e.interactionId),q=X?(X-G)/7+1:0)}))},Z=function(){return C?q:performance.interactionCount||0},Y=function(){"interactionCount"in performance||C||(C=F("event",$,{type:"event",buffered:!0,durationThreshold:0}))},Q=[200,500],K=0,J=function(){return Z()-K},ee=[],te={},re=function(e){var t=ee[ee.length-1],r=te[e.interactionId];if(r||ee.length<10||e.duration>t.latency){if(r)r.entries.push(e),r.latency=Math.max(r.latency,e.duration);else{var n={id:e.interactionId,latency:e.duration,entries:[e]};te[n.id]=n,ee.push(n)}ee.sort((function(e,t){return t.latency-e.latency})),ee.splice(10).forEach((function(e){delete te[e.id]}))}},ne=i(2545);class ie extends v{constructor(r,n){var i;let o=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(r,n,k.t,o),i=this,p.il){if(this.pageHiddenTime=(0,I.e)(),this.performanceObserver,this.lcpPerformanceObserver,this.clsPerformanceObserver,this.fiRecorded=!1,"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){this.performanceObserver=new PerformanceObserver((function(){return i.perfObserver(...arguments)}));try{this.performanceObserver.observe({entryTypes:["paint"]})}catch(e){}this.lcpPerformanceObserver=new PerformanceObserver((function(){return i.lcpObserver(...arguments)}));try{this.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(e){}this.clsPerformanceObserver=new PerformanceObserver((function(){return i.clsObserver(...arguments)}));try{this.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(e){}}this.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((e=>{(0,R.iz)(e,(function(){return i.captureInteraction(...arguments)}))})),function(e,t){t=t||{},W((function(){Y();var r,n=B("INP"),i=function(e){e.forEach((function(e){e.interactionId&&re(e),"first-input"===e.entryType&&!ee.some((function(t){return t.entries.some((function(t){return e.duration===t.duration&&e.startTime===t.startTime}))}))&&re(e)}));var t,i=(t=Math.min(ee.length-1,Math.floor(J()/50)),ee[t]);i&&i.latency!==n.value&&(n.value=i.latency,n.entries=i.entries,r())},o=F("event",i,{durationThreshold:t.durationThreshold||40});r=U(e,n,Q,t.reportAllChanges),o&&(o.observe({type:"first-input",buffered:!0}),V((function(){i(o.takeRecords()),n.value<0&&J()>0&&(n.value=0,n.entries=[]),r(!0)})),H((function(){ee=[],K=Z(),n=B("INP"),r=U(e,n,Q,t.reportAllChanges)})))}))}((t=>{let{name:r,value:n,id:i}=t;(0,c.p)("timing",[r.toLowerCase(),n,{metricId:i}],void 0,e.D.pageViewTiming,this.ee)})),!0===(0,t.Mt)(this.agentIdentifier,"page_view_timing.long_task")&&(e=>{const t=t=>{t.forEach((t=>{const r={name:"LT",value:t.duration,info:{ltFrame:t.name,ltStart:t.startTime,ltCtr:t.attribution[0].containerType}};"window"!==r.info.ltCtr&&Object.assign(r.info,{ltCtrSrc:t.attribution[0].containerSrc,ltCtrId:t.attribution[0].containerId,ltCtrName:t.attribution[0].containerName}),e(r)}))};let r;try{PerformanceObserver.supportedEntryTypes.includes("longtask")&&(r=new PerformanceObserver((e=>{Promise.resolve().then((()=>{t(e.getEntries())}))})),r.observe({type:"longtask",buffered:!0}))}catch(e){}r&&(0,ne.L)((()=>{t(r.takeRecords())}),!0)})((t=>{let{name:r,value:n,info:i}=t;(0,c.p)("timing",[r.toLowerCase(),n,i],void 0,e.D.pageViewTiming,this.ee)})),(0,I.N)((()=>{this.pageHiddenTime=(0,u.z)(),(0,c.p)("docHidden",[this.pageHiddenTime],void 0,e.D.pageViewTiming,this.ee)}),!0),(0,R.bP)("pagehide",(()=>(0,c.p)("winPagehide",[(0,u.z)()],void 0,e.D.pageViewTiming,this.ee))),this.importAggregator()}}perfObserver(t,r){t.getEntries().forEach((t=>{"first-paint"===t.name?(0,c.p)("timing",["fp",Math.floor(t.startTime)],void 0,e.D.pageViewTiming,this.ee):"first-contentful-paint"===t.name&&(0,c.p)("timing",["fcp",Math.floor(t.startTime)],void 0,e.D.pageViewTiming,this.ee)}))}lcpObserver(t,r){var n=t.getEntries();if(n.length>0){var i=n[n.length-1];if(this.pageHiddenTime<i.startTime)return;var o=[i],a=this.addConnectionAttributes({});a&&o.push(a),(0,c.p)("lcp",o,void 0,e.D.pageViewTiming,this.ee)}}clsObserver(t){t.getEntries().forEach((t=>{t.hadRecentInput||(0,c.p)("cls",[t],void 0,e.D.pageViewTiming,this.ee)}))}addConnectionAttributes(e){var t=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(t)return t.type&&(e["net-type"]=t.type),t.effectiveType&&(e["net-etype"]=t.effectiveType),t.rtt&&(e["net-rtt"]=t.rtt),t.downlink&&(e["net-dlink"]=t.downlink),e}captureInteraction(r){if(r instanceof t.Yu.EV&&!this.fiRecorded){var n=Math.round(r.timeStamp),i={type:r.type};this.addConnectionAttributes(i);const o=(0,t.OP)(this.agentIdentifier).offset;n<=(0,u.z)()?i.fid=(0,u.z)()-n:n>o&&n<=Date.now()?(n-=o,i.fid=(0,u.z)()-n):n=(0,u.z)(),this.fiRecorded=!0,(0,c.p)("timing",["fi",n,i],void 0,e.D.pageViewTiming,this.ee)}}}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(ie,"featureName",k.t);const oe={dedicated:Boolean(p._A?.Worker),shared:Boolean(p._A?.SharedWorker),service:Boolean(p._A?.navigator?.serviceWorker)};let ae,se,ce;var ue=i(6034);class fe extends v{constructor(t,r){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(t,r,ue.t9,n),function(e){if(!ae){if(oe.dedicated){ae=Worker;try{p._A.Worker=r(ae,"Dedicated")}catch(e){o(e,"Dedicated")}if(oe.shared){se=SharedWorker;try{p._A.SharedWorker=r(se,"Shared")}catch(e){o(e,"Shared")}}else n("Shared");if(oe.service){ce=navigator.serviceWorker.register;try{p._A.navigator.serviceWorker.register=(t=ce,function(){for(var e=arguments.length,r=new Array(e),n=0;n<e;n++)r[n]=arguments[n];return i("Service",r[1]?.type),t.apply(navigator.serviceWorker,r)})}catch(e){o(e,"Service")}}else n("Service");var t;return}n("All")}function r(e,t){return"undefined"==typeof Proxy?e:new Proxy(e,{construct:(e,r)=>(i(t,r[1]?.type),new e(...r))})}function n(t){p.v6||e("Workers/".concat(t,"/Unavailable"))}function i(t,r){e("Workers/".concat(t,"module"===r?"/Module":"/Classic"))}function o(t,r){e("Workers/".concat(r,"/SM/Unsupported")),(0,g.Z)("NR Agent: Unable to capture ".concat(r," workers."),t)}}((t=>(0,c.p)(ue.xS,[t],void 0,e.D.metrics,this.ee))),this.importAggregator()}}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(fe,"featureName",ue.t9);var de=i(3916),le=i(3752),he=i(8683),pe=i.n(he);const ge="nr@original";var ve=Object.prototype.hasOwnProperty,me=!1;function be(e,t){return e||(e=le.ee),r.inPlace=function(e,t,n,i,o){n||(n="");var a,s,c,u="-"===n.charAt(0);for(c=0;c<t.length;c++)Ee(a=e[s=t[c]])||(e[s]=r(a,u?s+n:n,i,s,o))},r.flag=ge,r;function r(t,r,i,o,a){return Ee(t)?t:(r||(r=""),nrWrapper[ge]=t,we(t,nrWrapper,e),nrWrapper);function nrWrapper(){var s,c,u,f;try{c=this,s=pe()(arguments),u="function"==typeof i?i(s,c):i||{}}catch(t){ye([t,"",[s,c,o],u],e)}n(r+"start",[s,c,o],u,a);try{return f=t.apply(c,s)}catch(e){throw n(r+"err",[s,c,e],u,a),e}finally{n(r+"end",[s,c,f],u,a)}}}function n(r,n,i,o){if(!me||t){var a=me;me=!0;try{e.emit(r,n,i,t,o)}catch(t){ye([t,r,n,i],e)}me=a}}}function ye(e,t){t||(t=le.ee);try{t.emit("internal-error",e)}catch(e){}}function we(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){ye([e],r)}for(var n in e)ve.call(e,n)&&(t[n]=e[n]);return t}function Ee(e){return!(e&&e instanceof Function&&e.apply&&!e[ge])}var Te="fetch-",Ae=Te+"body-",xe=["arrayBuffer","blob","json","text","formData"],_e=p._A.Request,Se=p._A.Response,Oe="prototype",Pe="nr@context";const je={};function De(e){const t=function(e){return(e||le.ee).get("fetch")}(e);if(!(_e&&Se&&p._A.fetch))return t;if(je[t.debugId]++)return t;function r(e,r,n){var i=e[r];"function"==typeof i&&(e[r]=function(){var e,r=pe()(arguments),o={};t.emit(n+"before-start",[r],o),o[Pe]&&o[Pe].dt&&(e=o[Pe].dt);var a=i.apply(this,r);return t.emit(n+"start",[r,e],a),a.then((function(e){return t.emit(n+"end",[null,e],a),e}),(function(e){throw t.emit(n+"end",[e],a),e}))},e[r][ge]=i)}return je[t.debugId]=1,xe.forEach((e=>{r(_e[Oe],e,Ae),r(Se[Oe],e,Ae)})),r(p._A,"fetch",Te),t.on(Te+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(Te+"done",[null,r],n)}else t.emit(Te+"done",[e],n)})),t}const Ne={},Ce="setTimeout",Ie="setInterval",Re="clearTimeout",ke="-start",Le="-",He=[Ce,"setImmediate",Ie,Re,"clearImmediate"];function ze(e){const t=function(e){return(e||le.ee).get("timer")}(e);if(Ne[t.debugId]++)return t;Ne[t.debugId]=1;var r=be(t);return r.inPlace(p._A,He.slice(0,2),Ce+Le),r.inPlace(p._A,He.slice(2,3),Ie+Le),r.inPlace(p._A,He.slice(3),Re+Le),t.on(Ie+ke,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(Ce+ke,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}const Me={},Be="requestAnimationFrame";function Fe(e){const t=function(e){return(e||le.ee).get("raf")}(e);if(!p.il||Me[t.debugId]++)return t;Me[t.debugId]=1;var r=be(t);return r.inPlace(window,[Be],"raf-"),t.on("raf-start",(function(e){e[0]=r(e[0],"fn-")})),t}const Ue={},Ve=["pushState","replaceState"];function We(e){const t=function(e){return(e||le.ee).get("history")}(e);return!p.il||Ue[t.debugId]++||(Ue[t.debugId]=1,be(t).inPlace(window.history,Ve,"-")),t}const qe={},Ge=["appendChild","insertBefore","replaceChild"];function Xe(e){const t=function(e){return(e||le.ee).get("jsonp")}(e);if(!p.il||qe[t.debugId])return t;qe[t.debugId]=!0;var r=be(t),n=/[?&](?:callback|cb)=([^&#]+)/,i=/(.*)\.([^.]+)/,o=/^(\w+)(\.|$)(.*)$/;function a(e,t){var r=e.match(o),n=r[1],i=r[3];return i?a(i,t[n]):t[n]}return r.inPlace(Node.prototype,Ge,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var o=(s=e.src,c=s.match(n),c?c[1]:null);var s,c;if(!o)return;var u=function(e){var t=e.match(i);if(t&&t.length>=3)return{key:t[2],parent:a(t[1],window)};return{key:e,parent:window}}(o);if("function"!=typeof u.parent[u.key])return;var f={};function d(){t.emit("jsonp-end",[],f),e.removeEventListener("load",d,(0,R.m$)(!1)),e.removeEventListener("error",l,(0,R.m$)(!1))}function l(){t.emit("jsonp-error",[],f),t.emit("jsonp-end",[],f),e.removeEventListener("load",d,(0,R.m$)(!1)),e.removeEventListener("error",l,(0,R.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",f),e.addEventListener("load",d,(0,R.m$)(!1)),e.addEventListener("error",l,(0,R.m$)(!1)),t.emit("new-jsonp",[e.src],f)}(e[0])})),t}const $e={};function Ze(e){const r=function(e){return(e||le.ee).get("mutation")}(e);if(!p.il||$e[r.debugId])return r;$e[r.debugId]=!0;var n=be(r),i=t.Yu.MO;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(n(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),r}const Ye={};function Qe(e){const r=function(e){return(e||le.ee).get("promise")}(e);if(Ye[r.debugId])return r;Ye[r.debugId]=!0;var n=le.c,i=be(r),o=t.Yu.PR;return o&&function(){function e(t){var n=r.context(),a=i(t,"executor-",n,null,!1);const s=Reflect.construct(o,[a],e);return r.context(s).getCtx=function(){return n},s}p._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return o.toString()},Object.setPrototypeOf(e,o),["all","race"].forEach((function(t){const n=o[t];e[t]=function(e){let i=!1;e?.forEach((e=>{this.resolve(e).then(a("all"===t),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){r.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(t){const n=o[t];e[t]=function(e){const t=n.apply(this,arguments);return e!==t&&r.emit("propagate",[e,!0],t,!1,!1),t}})),e.prototype=o.prototype;const t=o.prototype.then;o.prototype.then=function(){var e=this,o=n(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=t.apply(this,s);return o.nextPromise=u,r.emit("propagate",[e,!0],u,!1,!1),u},o.prototype.then[ge]=t,r.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),r.on("executor-err",(function(e,t,r){e[1](r)})),r.on("cb-end",(function(e,t,n){r.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),r.on("propagate",(function(e,t,n){this.getCtx&&!t||(this.getCtx=function(){if(e instanceof Promise)var t=r.context(e);return t&&t.getCtx?t.getCtx():this})}))}(),r}const Ke={},Je=XMLHttpRequest,et="addEventListener",tt="removeEventListener";function rt(e){var t=function(e){return(e||le.ee).get("events")}(e);if(Ke[t.debugId]++)return t;Ke[t.debugId]=1;var r=be(t,!0);function n(e){r.inPlace(e,[et,tt],"-",i)}function i(e,t){return e[1]}return"getPrototypeOf"in Object&&(p.il&&nt(document,n),nt(p._A,n),nt(Je.prototype,n)),t.on(et+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,de.X)(n,"nr@wrapped",(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(tt+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function nt(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,et);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}const it={},ot=["open","send"];function at(e){var r=e||le.ee;const n=function(e){return(e||le.ee).get("xhr")}(r);if(it[n.debugId]++)return n;it[n.debugId]=1,rt(r);var i=be(n),o=t.Yu.XHR,a=t.Yu.MO,s=t.Yu.PR,c=t.Yu.SI,u="readystatechange",f=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],d=[],l=p._A.XMLHttpRequest.listeners,h=p._A.XMLHttpRequest=function(e){var t=new o(e);function r(){try{n.emit("new-xhr",[t],t),t.addEventListener(u,m,(0,R.m$)(!1))}catch(e){(0,g.Z)("An error occured while intercepting XHR",e);try{n.emit("internal-error",[e])}catch(e){}}}return this.listeners=l?[...l,r]:[r],this.listeners.forEach((e=>e())),t};function v(e,t){i.inPlace(t,["onreadystatechange"],"fn-",T)}function m(){var e=this,t=n.context(e);e.readyState>3&&!t.resolved&&(t.resolved=!0,n.emit("xhr-resolved",[],e)),i.inPlace(e,f,"fn-",T)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,h),h.prototype=o.prototype,i.inPlace(h.prototype,ot,"-xhr-",T),n.on("send-xhr-start",(function(e,t){v(e,t),function(e){d.push(e),a&&(b?b.then(E):c?c(E):(y=-y,w.data=y))}(t)})),n.on("open-xhr-start",v),a){var b=s&&s.resolve();if(!c&&!s){var y=1,w=document.createTextNode(y);new a(E).observe(w,{characterData:!0})}}else r.on("fn-end",(function(e){e[0]&&e[0].type===u||E()}));function E(){for(var e=0;e<d.length;e++)v(0,d[e]);d.length&&(d=[])}function T(e,t){return t}return n}var st,ct={};try{st=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(ct.console=!0,-1!==st.indexOf("dev")&&(ct.dev=!0),-1!==st.indexOf("nr_dev")&&(ct.nrDev=!0))}catch(e){}function ut(e){try{ct.console&&ut(e)}catch(e){}}ct.nrDev&&le.ee.on("internal-error",(function(e){ut(e.stack)})),ct.dev&&le.ee.on("fn-err",(function(e,t,r){ut(r.stack)})),ct.dev&&(ut("NR AGENT IN DEVELOPMENT MODE"),ut("flags: "+(0,A.D)(ct,(function(e,t){return e})).join(", ")));var ft=i(8322);function dt(e,t){!function(e,t){if(t.has(e))throw new TypeError("Cannot initialize the same private elements twice on an object")}(e,t),t.add(e)}var lt=new WeakSet;class ht extends v{constructor(r,n){var i;let o=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(r,n,ft.t,o),i=this,dt(this,lt),this.skipNext=0,this.origOnerror=p._A.onerror;try{this.removeOnAbort=new AbortController}catch(e){}const a=this;a.ee.on("fn-start",(function(e,t,r){a.abortHandler&&(a.skipNext+=1)})),a.ee.on("fn-err",(function(e,t,r){a.abortHandler&&!r[ft.A]&&((0,de.X)(r,ft.A,(function(){return!0})),this.thrown=!0,vt(r,void 0,a.ee))})),a.ee.on("fn-end",(function(){a.abortHandler&&!this.thrown&&a.skipNext>0&&(a.skipNext-=1)})),a.ee.on("internal-error",(function(t){(0,c.p)("ierr",[t,(0,u.z)(),!0],void 0,e.D.jserrors,a.ee)})),p._A.onerror=function(){return i.origOnerror&&i.origOnerror(...arguments),i.onerrorHandler(...arguments),!1},p._A.addEventListener("unhandledrejection",(t=>{const r=function(e){let t="Unhandled Promise Rejection: ";if(e instanceof Error)try{return e.message=t+e.message,e}catch(t){return e}if(void 0===e)return new Error(t);try{return new Error(t+(0,N.P)(e))}catch(e){return new Error(t)}}(t.reason);(0,c.p)("err",[r,(0,u.z)(),!1,{unhandledPromiseRejection:1}],void 0,e.D.jserrors,this.ee)}),(0,R.m$)(!1,this.removeOnAbort?.signal)),Fe(this.ee),ze(this.ee),rt(this.ee),(0,t.OP)(r).xhrWrappable&&at(this.ee),this.abortHandler=function(e,t,r){if(!t.has(e))throw new TypeError("attempted to get private field on non-instance");return r}(this,lt,pt),this.importAggregator()}onerrorHandler(t,r,n,i,o){try{this.skipNext?this.skipNext-=1:vt(o||new gt(t,r,n),!0,this.ee)}catch(t){try{(0,c.p)("ierr",[t,(0,u.z)(),!0],void 0,e.D.jserrors,this.ee)}catch(e){}}return"function"==typeof this.origOnerror&&this.origOnerror.apply(this,pe()(arguments))}}function pt(){this.removeOnAbort?.abort(),this.abortHandler=void 0}function gt(e,t,r){this.message=e||"Uncaught error with no additional information",this.sourceURL=t,this.line=r}function vt(t,r,n){var i=r?null:(0,u.z)();(0,c.p)("err",[t,i],void 0,e.D.jserrors,n)}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(ht,"featureName",ft.t);var mt=1,bt="nr@id";function yt(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===p._A?0:(0,de.X)(e,bt,(function(){return mt++}))}var wt=i(9071);function Et(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,N.P)(e).length}catch(e){return}}}var Tt=i(6368);class At{constructor(e){this.agentIdentifier=e,this.generateTracePayload=this.generateTracePayload.bind(this),this.shouldGenerateTrace=this.shouldGenerateTrace.bind(this)}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var r=(0,t.DL)(this.agentIdentifier);if(!r)return null;var n=(r.accountID||"").toString()||null,i=(r.agentID||"").toString()||null,o=(r.trustKey||"").toString()||null;if(!n||!i)return null;var a=(0,D.M)(),s=(0,D.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,n,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,n,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof p._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,N.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var r=!1,n={};if((0,t.Mt)(this.agentIdentifier,"distributed_tracing")&&(n=(0,t.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)r=!0;else if(n.allowed_origins instanceof Array)for(var i=0;i<n.allowed_origins.length;i++){var o=(0,Tt.e)(n.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){r=!0;break}}return r}isDtEnabled(){var e=(0,t.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,t.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,t.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,t.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var xt=i(8675);var _t=["load","error","abort","timeout"],St=_t.length,Ot=t.Yu.REQ,Pt=p._A.XMLHttpRequest;class jt extends v{constructor(r,n){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(r,n,xt.t,i),(0,t.OP)(r).xhrWrappable&&(this.dt=new At(r),this.handler=(e,t,r,n)=>(0,c.p)(e,t,r,n,this.ee),De(this.ee),at(this.ee),function(r,n,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=A,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){_(t,e)}),(0,R.m$)(!1)),wt.I||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,R.m$)(!1))}function s(e){this.params={method:e[0]},x(this,e[1]),this.metrics={}}function c(e,n){var i=(0,t.DL)(r);"xpid"in i&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(n.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(n.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&n.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function f(e,t){var r=this.metrics,i=e[0],o=this;if(r&&i){var a=Et(i);a&&(r.txSize=a)}this.startTime=(0,u.z)(),this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof t.onload)&&"function"==typeof o.end)&&o.end(t)}catch(e){try{n.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<St;s++)t.addEventListener(_t[s],this.listener,(0,R.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function l(e,t){var r=""+yt(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+yt(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function g(){this.endTime=(0,u.z)()}function v(e,t){t instanceof Pt&&"load"===e[0]&&n.emit("xhr-load-added",[e[1],e[2]],t)}function m(e,t){t instanceof Pt&&"load"===e[0]&&n.emit("xhr-load-removed",[e[1],e[2]],t)}function b(e,t,r){t instanceof Pt&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,u.z)()))}function y(e,t){this.xhrCbStart&&n.emit("xhr-cb-time",[(0,u.z)()-this.xhrCbStart,this.onload,t],t)}function w(e){var t,r=e[1]||{};"string"==typeof e[0]?t=e[0]:e[0]&&e[0].url?t=e[0].url:p._A?.URL&&e[0]&&e[0]instanceof URL&&(t=e[0].href),t&&(this.parsedOrigin=(0,Tt.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if("string"==typeof e[0]||p._A?.URL&&e[0]&&e[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}else e[0]&&e[0].headers&&s(e[0].headers,n)&&(this.dt=n);function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function E(e,t){this.params={},this.metrics={},this.startTime=(0,u.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof Ot?r=i.url:p._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),x(this,r);var o=(""+(i&&i instanceof Ot&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.txSize=Et(n.body)||0}function T(t,r){var n;this.endTime=(0,u.z)(),this.params||(this.params={}),this.params.status=r?r.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,u.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,e.D.ajax)}function A(t){var r=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<St;o++)t.removeEventListener(_t[o],this.listener,!1);r.aborted||(n.duration=(0,u.z)()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==r.status&&(r.status=0):_(this,t),n.cbTime=this.cbTime,i("xhr",[r,n,this.startTime,this.endTime,"xhr"],this,e.D.ajax))}}function x(e,t){var r=(0,Tt.e)(t),n=e.params;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}function _(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?Et(e.response):"text"===r||""===r||void 0===r?Et(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}n.on("new-xhr",a),n.on("open-xhr-start",s),n.on("open-xhr-end",c),n.on("send-xhr-start",f),n.on("xhr-cb-time",d),n.on("xhr-load-added",l),n.on("xhr-load-removed",h),n.on("xhr-resolved",g),n.on("addEventListener-end",v),n.on("removeEventListener-end",m),n.on("fn-end",y),n.on("fetch-before-start",w),n.on("fetch-start",E),n.on("fn-start",b),n.on("fetch-done",T)}(r,this.ee,this.handler,this.dt),this.importAggregator())}}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(jt,"featureName",xt.t);var Dt=i(6408),Nt=i(2628);function Ct(e,t){!function(e,t){if(t.has(e))throw new TypeError("Cannot initialize the same private elements twice on an object")}(e,t),t.add(e)}const{BST_RESOURCE:It,BST_TIMER:Rt,END:kt,FEATURE_NAME:Lt,FN_END:Ht,FN_START:zt,ADD_EVENT_LISTENER:Mt,PUSH_STATE:Bt,RESOURCE:Ft,RESOURCE_TIMING_BUFFER_FULL:Ut,START:Vt,ORIG_EVENT:Wt}=Nt,qt="clearResourceTimings";var Gt=new WeakSet;class Xt extends v{constructor(t,r){if(super(t,r,Lt,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),Ct(this,Gt),!p.il)return;const n=this.ee;this.timerEE=ze(n),this.rafEE=Fe(n),We(n),rt(n),n.on(zt,(function(e,t){e[0]instanceof Wt&&(this.bstStart=(0,u.z)())})),n.on(Ht,(function(t,r){var i=t[0];i instanceof Wt&&(0,c.p)("bst",[i,r,this.bstStart,(0,u.z)()],void 0,e.D.sessionTrace,n)})),this.timerEE.on(zt,(function(e,t,r){this.bstStart=(0,u.z)(),this.bstType=r})),this.timerEE.on(Ht,(function(t,r){(0,c.p)(Rt,[r,this.bstStart,(0,u.z)(),this.bstType],void 0,e.D.sessionTrace,n)})),this.rafEE.on(zt,(function(){this.bstStart=(0,u.z)()})),this.rafEE.on(Ht,(function(t,r){(0,c.p)(Rt,[r,this.bstStart,(0,u.z)(),"requestAnimationFrame"],void 0,e.D.sessionTrace,n)})),n.on(Bt+Vt,(function(e){this.time=(0,u.z)(),this.startPath=location.pathname+location.hash})),n.on(Bt+kt,(function(t){(0,c.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,e.D.sessionTrace,n)})),(0,Dt.W)()?((0,c.p)(It,[window.performance.getEntriesByType("resource")],void 0,e.D.sessionTrace,n),function(){var t=new PerformanceObserver(((t,r)=>{var i=t.getEntries();(0,c.p)(It,[i],void 0,e.D.sessionTrace,n)}));try{t.observe({entryTypes:["resource"]})}catch(e){}}()):window.performance[qt]&&window.performance[Mt]&&window.performance.addEventListener(Ut,this.onResourceTimingBufferFull,(0,R.m$)(!1)),document.addEventListener("scroll",this.noOp,(0,R.m$)(!1)),document.addEventListener("keypress",this.noOp,(0,R.m$)(!1)),document.addEventListener("click",this.noOp,(0,R.m$)(!1)),this.abortHandler=function(e,t,r){if(!t.has(e))throw new TypeError("attempted to get private field on non-instance");return r}(this,Gt,$t),this.importAggregator()}noOp(e){}onResourceTimingBufferFull(t){if((0,c.p)(It,[window.performance.getEntriesByType(Ft)],void 0,e.D.sessionTrace,this.ee),window.performance[qt])try{window.performance.removeEventListener(Ut,this.onResourceTimingBufferFull,!1)}catch(e){}}}function $t(){window.performance.removeEventListener(Ut,this.onResourceTimingBufferFull,!1),this.abortHandler=void 0}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(Xt,"featureName",Lt);var Zt=i(755);function Yt(e,t){!function(e,t){if(t.has(e))throw new TypeError("Cannot initialize the same private elements twice on an object")}(e,t),t.add(e)}const{FEATURE_NAME:Qt,START:Kt,END:Jt,BODY:er,CB_END:tr,JS_TIME:rr,FETCH:nr,FN_START:ir,CB_START:or,FN_END:ar}=Zt;var sr=new WeakSet;class cr extends v{constructor(e,r){if(super(e,r,Qt,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),Yt(this,sr),!p.il)return;if(!(0,t.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let n,i=0;const o=this.ee.get("tracer"),a=Xe(this.ee),s=Qe(this.ee),c=ze(this.ee),f=at(this.ee),d=this.ee.get("events"),l=De(this.ee),h=We(this.ee),g=Ze(this.ee);function v(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,n=window.location.hash,this[ir]=(0,u.z)()}function b(){i--,window.location.hash!==n&&v(0,!0);var e=(0,u.z)();this[rr]=~~this[rr]+e-this[ir],this[ar]=e}function y(e,t){e.on(t,(function(){this[t]=(0,u.z)()}))}this.ee.on(ir,m),s.on(or,m),a.on(or,m),this.ee.on(ar,b),s.on(tr,b),a.on(tr,b),this.ee.buffer([ir,ar,"xhr-resolved"],this.featureName),d.buffer([ir],this.featureName),c.buffer(["setTimeout"+Jt,"clearTimeout"+Kt,ir],this.featureName),f.buffer([ir,"new-xhr","send-xhr"+Kt],this.featureName),l.buffer([nr+Kt,nr+"-done",nr+er+Kt,nr+er+Jt],this.featureName),h.buffer(["newURL"],this.featureName),g.buffer([ir],this.featureName),s.buffer(["propagate",or,tr,"executor-err","resolve"+Kt],this.featureName),o.buffer([ir,"no-"+ir],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),y(l,nr+Kt),y(l,nr+"-done"),y(a,"new-jsonp"),y(a,"jsonp-end"),y(a,"cb-start"),h.on("pushState-end",v),h.on("replaceState-end",v),window.addEventListener("hashchange",v,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",v,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){v(0,i>1)}),(0,R.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=function(e,t,r){if(!t.has(e))throw new TypeError("attempted to get private field on non-instance");return r}(this,sr,ur),this.importAggregator()}}function ur(){this.removeOnAbort?.abort(),this.abortHandler=void 0}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(cr,"featureName",Qt);var fr=i(6486);class dr extends v{constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,fr.t,r),this.importAggregator()}}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(dr,"featureName",fr.t),new class{constructor(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,D.ky)(16);this.agentIdentifier=t,this.sharedAggregator=new x({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),Object.assign(this,(0,a.j)(this.agentIdentifier,e,e.loaderType||"agent")),this.start()}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){const t="features";try{const r=n(this.agentIdentifier),i=Array.from(this.desiredFeatures);i.sort(((t,r)=>e.p[t.featureName]-e.p[r.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===e.D.pageViewEvent){const e=(0,s.Z)(t.featureName),n=e.every((e=>r[e]));n||(0,g.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,N.P)(e),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,j.Qy)(this.agentIdentifier,this.features,t)}catch(e){(0,g.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",e);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,j.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[jt,E,ie,Xt,fe,dr,ht,cr],loaderType:"spa"})})(),window.NRBA=o})();
+</script>
+    <meta name="theme-color" content="#003C96" />
+
+      <link href="https://lenta.com/lenta-center/" rel="canonical" />
+
+
+    <!-- anti-flicker snippet for Google Optimize -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-5X2ZNV':true});</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5X2ZNV');</script>
+<!-- End Google Tag Manager -->
+<meta name="google-site-verification" content="5Qv8QuohPsrU20TuIM_nZByUVBC572uwgB-ZDIanjEk" />
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(37945865, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<!-- /Yandex.Metrika counter -->
+
+    <script>
+  if (dataLayer) {
+    if (!window.location.href.match(/no-search-results\/\?searchText=$/)) {
+      if (true) {
+        dataLayer.push({
+          'SelectedStore': 'д. Старо-Паново, ш. Таллинское, д. 159, лит. А',
+          'SelectedStoreId': '0006',
+          'SelectedCity': 'Санкт-Петербург и ЛО',
+          'pageType': 'LandingPage',
+          'shippingMethod': 'Самовывоз',
+          'statusPro': 'False'
+        });
+      } else {
+        dataLayer.push({
+          'userId': '',
+          'SelectedStore': 'д. Старо-Паново, ш. Таллинское, д. 159, лит. А',
+          'SelectedStoreId': '0006',
+          'SelectedCity': 'Санкт-Петербург и ЛО',
+          'pageType': 'LandingPage',
+          'shippingMethod': 'Самовывоз',
+          'statusPro': 'False'
+        });
+      }
+    }
+  }
+</script>
+
+    
+<script async src="https://cdn.topmind.io/static/tracker.js"></script>
+
+<script>
+window.$tmt = window.$tmt || function () {($tmt.q = $tmt.q || []).push(arguments)};
+$tmt('init', 19, 'nq7wmjmw69', {
+initApiCall: true,
+sendDataLayer: true
+});
+</script>
+
+    
+
+<link rel="preload" href="https://cdn.appsflyer.com/creatives-fonts/museo_sans/MuseoSans_500-webfont.woff2" as="font" type="font/woff2" crossorigin>
+
+
+    <link rel="stylesheet" href="https://lenta.servicecdn.ru/static/base.3e2ab4d73adb3a7ff500.css" />
+    <link rel="stylesheet" href="https://lenta.servicecdn.ru/static/main.07655442fc8c379d292b.css" />
+    <link rel="stylesheet" href="https://lenta.servicecdn.ru/static/migration.aaaaa4ec6a408e6cb68c.css" />
+    <link rel="preload" href="https://lenta.servicecdn.ru/static/catalog.34218935f79a08ea10f9.css" as="style" onload="this.rel='stylesheet'" media="all" />
+    <link rel="preload" href="https://lenta.servicecdn.ru/static/loyalty.461c1c12ee1e845f4996.css" as="style" onload="this.rel='stylesheet'" media="all" />
+    <link rel="preload" href="https://lenta.servicecdn.ru/static/recipes.08c87dcc820a4c9f6218.css" as="style" onload="this.rel='stylesheet'" media="all" />
+    <link rel="preload" href="https://lenta.servicecdn.ru/static/stamps.6ff6b112af44d1b54c33.css" as="style" onload="this.rel='stylesheet'" media="all" />
+    <link rel="preload" href="https://lenta.servicecdn.ru/static/newLogin.4229aae28d7949db5596.css" as="style" onload="this.rel='stylesheet'" media="all" />
+    <link rel="preload" href="https://lenta.servicecdn.ru/static/proRegistration.d334b624d42e10b20988.css" as="style" onload="this.rel='stylesheet'" media="all" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#003C96" />
+
+    <script>
+  function hideBanner() {
+    if (sessionStorage.getItem("is_reloaded")) {
+      const style = document.createElement('style');
+
+      style.textContent = `
+        .smartbanner {
+          visibility: hidden !important;
+          opacity: 0 !important;
+        }
+        .touch-device {
+          margin-top: 0 !important;
+          transition: all 0.3s ease-out;
+        }
+      `;
+
+      document.head.appendChild(style);
+    } else {
+      sessionStorage.setItem("is_reloaded", true);
+
+      setTimeout(() => {hideBanner();}, 10000);
+    }
+  }
+</script>
+
+
+
+  <meta name="smartbanner:title" content="Лента" />
+  <meta name="smartbanner:author" content="LENTA" />
+  <meta name="smartbanner:price" content="Вся Лента в твоём телефоне" />
+    <meta name="smartbanner:price-suffix-apple" content=" " />
+    <meta name="smartbanner:icon-apple" content="https://lenta.servicecdn.ru/static/pics/shortcuts/smartbanner-icon.5e0a992e489dd14e5b7d530646b1e88c.png" />
+    <meta name="smartbanner:button-url-apple" content="https://redirect.appmetrica.yandex.com/serve/748693644952765996?utm_source=lenta_com&amp;utm_medium=web&amp;utm_campaign=smartbanner_mob" />
+    <script>
+      document.addEventListener("smartbanner.clickout", () => {
+        dataLayer && dataLayer.push({
+          event: "eventTracking",
+          category: "migration:smartBanner",
+          action: "appDownload",
+          label: "https://redirect.appmetrica.yandex.com/serve/748693644952765996?utm_source=lenta_com&amp;utm_medium=web&amp;utm_campaign=smartbanner_mob"
+        });
+      });
+
+      document.addEventListener("smartbanner.init", hideBanner);
+    </script>
+    <meta name="smartbanner:price-suffix-google" content=" " />
+    <meta name="smartbanner:icon-google" content="https://lenta.servicecdn.ru/static/pics/shortcuts/smartbanner-icon.5e0a992e489dd14e5b7d530646b1e88c.png" />
+    <meta name="smartbanner:button-url-google" content="https://redirect.appmetrica.yandex.com/serve/748693644952765996?utm_source=lenta_com&amp;utm_medium=web&amp;utm_campaign=smartbanner_mob" />
+    <script>
+      document.addEventListener("smartbanner.clickout", () => {
+        dataLayer && dataLayer.push({
+          event: "eventTracking",
+          category: "migration:smartBanner",
+          action: "appDownload",
+          label: "https://redirect.appmetrica.yandex.com/serve/748693644952765996?utm_source=lenta_com&amp;utm_medium=web&amp;utm_campaign=smartbanner_mob"
+        });
+      });
+    </script>
+  <meta name="smartbanner:button" content="Установить" />
+  <meta name="smartbanner:enabled-platforms" content="ios,android" />
+  <meta name="smartbanner:hide-path" content="/" />
+  <meta name="smartbanner:hide-ttl" content="2592000000" />
+
+
+    
+
+  <title>Сеть магазинов &#171;Лента&#187;</title>
+
+
+
+
+
+
+    
+  <!-- Yandex.Metrika project counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   var ymProjectId = 88439743;
+
+   ym(ymProjectId, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/88439743" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika project counter -->
+
+
+
+    
+
+    <link rel="icon" href="https://lenta.servicecdn.ru/static/pics/shortcuts/favicon.daf3654ccc7e13ee6ecb74818f5c089d.ico" />
+    <link rel="icon" sizes="16x16" href="https://lenta.servicecdn.ru/static/pics/shortcuts/favicon-16x16.26d0dd45dca52d2d63222f7ddbcf0ca7.png">
+    <link rel="icon" sizes="32x32" href="https://lenta.servicecdn.ru/static/pics/shortcuts/favicon-32x32.f51ab994073227aadc6b5a8d6ba8425b.png">
+    <link rel="icon" sizes="192x192" href="https://lenta.servicecdn.ru/static/pics/shortcuts/android-chrome-192x192.43ff388a71030818330dc6fe1025a58a.png">
+    <link rel="apple-touch-ico" href="https://lenta.servicecdn.ru/static/pics/shortcuts/apple-touch-icon.960dd1b7dd45ff3b3d9da11afe2afc33.png" />
+
+  </head>
+
+
+<body>
+  
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X2ZNV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Yandex.Metrika counter -->
+<noscript><div><img src="https://mc.yandex.ru/watch/37945865" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<script>
+  "use strict";
+
+  if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach; // for IE temporary solution [TODO]
+  };
+
+  var eventPropsMapping = {
+    "ga-event-category": "category",
+    "ga-event-action": "action",
+    "ga-event-label": "label",
+    "ga-event-value": "value",
+    "ga-event-non-interaction": "non_interaction",
+  };
+
+  var showEventObserverOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.9
+  }
+
+  var showEventObserverCallback = function(entries, observer) {
+
+    entries.forEach(function (entry) {
+
+      if (entry.isIntersecting) {
+        observer.unobserve(entry.target);
+        sendEvent(entry.target);
+      }
+
+    })
+  };
+
+  function sendEvent(node) {
+
+    var dataLayerPayload = Object.keys(eventPropsMapping).reduce(function(acc, attribute) {
+
+      var prop = eventPropsMapping[attribute];
+      var propValue = node.getAttribute(attribute);
+
+      // [AK]: We add all values (and empty) due to GTM bug
+      // (see comment in customEvent.js file)
+
+      acc[prop] = propValue;
+      return acc;
+
+    }, {});
+
+    dataLayerPayload.event = "eventTracking";
+
+    if (node.parentNode && node.parentNode.getAttribute("data-slide-index")) {
+      var link = node.hasAttribute("href") ? " | " + node.getAttribute("href") : "";
+
+      var sliderContainer = node.parentNode.closest("[data-gtm-slider-index]");
+      var sliderContainerIndex = sliderContainer
+        ? String(Number(sliderContainer.getAttribute("data-gtm-slider-index")) + 1)
+        : "";
+      var slideOrder = String(Number(node.parentNode.getAttribute("data-slide-index")) + 1);
+
+      dataLayerPayload.label = dataLayerPayload.label + " | " + slideOrder + link + " | " + sliderContainerIndex;
+    }
+
+    dataLayer.push(dataLayerPayload);
+
+  }
+
+  function findParent(node, comparator) {
+
+    if (!node) {
+      return null;
+    }
+
+    while (!comparator(node)) {
+      return findParent(node.parentNode, comparator);
+    }
+
+    return node;
+
+  }
+
+  function handleGaEvent(event) {
+
+    var gaDataNode = findParent(event.target, function (node) {
+      return node.getAttribute && node.getAttribute("ga-on") === "click";
+    });
+
+    if (!gaDataNode) {
+      return;
+    }
+
+    sendEvent(gaDataNode);
+
+  }
+
+  function sendLoadEvent() {
+    var elements = document.querySelectorAll('[ga-on="load"]');
+
+    for (var i = 0; i < elements.length; i++) {
+      sendEvent(elements[i]);
+    }
+
+  }
+
+  function getIsElementInViewport(element) {
+    let rect = element.getBoundingClientRect();
+
+    return (
+      rect.bottom / (rect.bottom - rect.top) >= 0.9 &&
+      rect.left >= 0 &&
+      rect.bottom - rect.bottom * 0.1 <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+
+  }
+
+  function setShowEventObserverForBanners() {
+    var IntersectionObserverIsSupported = 'IntersectionObserver' in window;
+    if (!IntersectionObserverIsSupported) {
+        return;
+    }
+
+    var showEventObserver = new IntersectionObserver(showEventObserverCallback, showEventObserverOptions);
+
+    let elements = document.querySelectorAll('[ga-on="show"]');
+
+    elements.forEach(function (element) {
+      if (!element.closest(".slider-block--c-promo .swiper-slider")) {
+        showEventObserver.observe(element);
+      }
+    });
+  }
+
+  function init() {
+    document.body.addEventListener("click", handleGaEvent);
+    setShowEventObserverForBanners();
+    sendLoadEvent;
+  }
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+    init();
+  });
+
+</script>
+
+  
+
+  <div class="scroll-lock ">
+    
+
+  
+
+
+  <div class="scroll-lock__inner page-wrap">
+      <div class="page">
+
+        
+
+
+<div class="topline-banner-block js-topline-banner-block" data-model="{&quot;id&quot;:&quot;4611999&quot;,&quot;systemName&quot;:&quot;shashlik_160424_200524_topline&quot;,&quot;linkId&quot;:&quot;shashlik_160424_200524_topline&quot;,&quot;image&quot;:&quot;https://lenta.servicecdn.ru/globalassets/banners/10/2024/1440x100_est_vse_top_banner_desktop.jpg&quot;,&quot;imageForMobile&quot;:&quot;https://lenta.servicecdn.ru/globalassets/banners/10/2024/560x100_est_vse_top_banner_app.jpg&quot;,&quot;linkUrl&quot;:&quot;https://lenta.com/l/shashlik/&quot;,&quot;linkForMobileUrl&quot;:&quot;https://lenta.com/l/shashlik/&quot;,&quot;canBeClosed&quot;:true,&quot;repeatShowTime&quot;:86400.0,&quot;colorBackground&quot;:&quot;#91d33e&quot;}"></div>
+
+<header class="header page__header js-main-header js-ecommerce-set-page-type  " Lenta.Migration.Controllers.ViewModels.HeaderViewModel
+        data-page-type="LandingPage"
+        data-authentication-url="/npl/authentication"
+        data-registration-url="/npl/authentication"
+        data-profile-url="https://lenta.com/lk/profile/edit/"
+        data-is-npl="True"
+        data-delivery-option="None"
+        data-is-ecom-delivery-available="True"
+        data-da-data-client-public-key="2e380c3eb18fe9b7f96ad16e8b73c7ebe2f8dcb8"
+        data-delivery-store-id=""
+        data-current-store-id="0006"
+        data-is-sticky="True"
+        data-delivery-address="null"
+        data-is-page-not-available="False"
+        data-card-number=""
+        data-previous-url="https://lenta.com/catalog/"
+        data-store="{&quot;id&quot;:&quot;0006&quot;,&quot;address&quot;:&quot;д. Старо-Паново, ш. Таллинское, д. 159, лит. А&quot;,&quot;firstAddress&quot;:&quot;ш. Таллинское, д. 159, лит. А&quot;,&quot;secondAddress&quot;:&quot;г. Санкт-Петербург и ЛО, д. Старо-Паново&quot;,&quot;cityKey&quot;:&quot;spb&quot;,&quot;cityName&quot;:&quot;Санкт-Петербург и ЛО&quot;,&quot;type&quot;:&quot;hypermarket&quot;,&quot;lat&quot;:59.807053,&quot;long&quot;:30.162049,&quot;opensAt&quot;:&quot;0&quot;,&quot;closesAt&quot;:&quot;24&quot;,&quot;is24hStore&quot;:true,&quot;hasPetShop&quot;:false,&quot;hasTobaccoPoint&quot;:true,&quot;isEcomAvailable&quot;:true,&quot;isPickupAvailable&quot;:true,&quot;isDeliveryAvailable&quot;:true,&quot;typeName&quot;:&quot;Гипер Лента&quot;,&quot;typeColor&quot;:&quot;#FFB900&quot;}"
+        data-non-excise-alco-product-tooltip-text=""
+        data-veterinary-product-tooltip-text=""
+        data-marked-product-tooltip-text=""
+        data-is-pro-card-selected="False"
+        data-pro-delivery-addresses="null"
+        data-is-pro-user-verified="False"
+        data-nds-tooltip-text=""
+        data-web-analytics="{&quot;userId&quot;:&quot;&quot;,&quot;storeAddress&quot;:&quot;д. Старо-Паново, ш. Таллинское, д. 159, лит. А&quot;,&quot;storeId&quot;:&quot;0006&quot;,&quot;cityName&quot;:&quot;Санкт-Петербург и ЛО&quot;,&quot;pageType&quot;:&quot;LandingPage&quot;,&quot;shippingMethod&quot;:&quot;Самовывоз&quot;,&quot;isProCardSelected&quot;:false}"
+        data-redirect-popup="{&quot;redirectPopupTitle&quot;:&quot;Как вам удобно получить заказ?&quot;,&quot;redirectPopupDeliveryTileText&quot;:&quot;Оформить заказ с доставкой на сайте Ленты Онлайн&quot;,&quot;redirectPopupPickupTileText&quot;:&quot;Оформить заказ и забрать его из ближайшей Ленты&quot;,&quot;redirectPopupText&quot;:&quot;Переходите на сайт Ленты Онлайн, чтобы оформить заказ с доставкой&quot;,&quot;redirectTooltipText&quot;:&quot;Переходите на сайт Ленты Онлайн, чтобы оформить заказ с доставкой&quot;,&quot;redirectUrl&quot;:&quot;https://online.lenta.com/?fromLenta=true&quot;,&quot;shouldRenderPopup&quot;:true}"
+        data-addresses-service-gateway="Dadata"
+        data-yandex-api-key="24f04906-883e-4669-8e50-6c62f53b48eb"
+        data-is-rollback-to-available-stock-enabled="True"
+        data-is-recipe-page="False"
+        data-should-show-pro-redirect-popup="False"
+        data-authorize-motivation-tooltip="{&quot;shouldRender&quot;:false}"
+        data-hide-header="False">
+
+<div class="header__link-bar">
+
+  <div class="header__links">
+
+
+
+
+
+  </div>
+
+</div>
+<div class="js-header-bar header__bar">
+
+  <div class="js-header-bar-wrap header__bar-wrap">
+    <div class="header__overlay"></div>
+
+    <a href="#" class="header__burger js-header-menu-toggler" native>
+      <svg class="icon header__burger-icon"><use xlink:href="#three-bars"></use></svg>
+    </a>
+
+    <a href="#" class="header__close-link js-header-menu-closer" native>
+      <svg class="icon header__close-icon"><use xlink:href="#close"></use></svg>
+    </a>
+
+    <div class="header__logo-container">
+      <a
+        href="https://lenta.com/"
+        class="header__logo"
+        ga-on="click"
+        ga-event-category="migration:startpage"
+        ga-event-action="logoClick"
+        ga-event-non-interaction="false"
+        native
+      >
+        
+
+<picture>
+  <source type="image/webp" media="(max-width: 768px)" srcset="https://lenta.servicecdn.ru/globalassets/logos-and-icons/lenta_logo_b.svg?preset=logo-mobile-webp">
+  <source type="image/webp" media="(min-width: 769px)" srcset="https://lenta.servicecdn.ru/globalassets/logos-and-icons/lenta_logo_b.svg?preset=logo-webp">
+  <img class="header__image"
+     src="https://lenta.servicecdn.ru/globalassets/logos-and-icons/lenta_logo_b.svg?preset=logo"
+     alt=""
+     decoding="async"
+     loading="lazy" />
+</picture>
+
+      </a>
+    </div>
+
+    <div class="js-header-switcher header-switcher"></div>
+
+    <div class="js-header-catalog-menu header__catalog-menu" data-menu="{&quot;catalogUrl&quot;:&quot;https://lenta.com/catalog/&quot;,&quot;shoppingListUrl&quot;:&quot;https://lenta.com/shoppinglist/&quot;,&quot;searchPageUrl&quot;:&quot;https://lenta.com/search/&quot;,&quot;ecomListUrl&quot;:&quot;https://lenta.com/order/cart/&quot;}" data-is-cabinet="False">
+      <div class="header__catalog-menu-container">
+        <a href="https://lenta.com/catalog/" class="header__catalog" native>
+          <svg class="icon header__catalog-burger-icon"><use xlink:href="#three-bars"></use></svg>
+          Каталог
+        </a>
+      </div>
+    </div>
+
+    <div class="header__search catalog-search"
+          data-search-results-page="https://lenta.com/search/"
+          data-search-request-threshold="1200">
+      <input type="text"
+              class="catalog-search__field"
+              placeholder="Поиск в каталоге и на сайте" />
+      <div class="catalog-search__icon">
+        <svg class="icon "><use xlink:href="#search"></use></svg>
+      </div>
+    </div>
+
+    <a href="#" class="header__bar-icon js-open-catalog-search">
+      <svg class="icon header__search-bar-icon"><use xlink:href="#search"></use></svg>
+    </a>
+
+    <div class="header__catalog-links">
+
+        <div class="js-authorize-motivation-tooltip">
+          <a href="/npl/authentication"
+            class="header-catalog-link header-catalog-link--person header__person-cabinet-link header__person-cabinet-link--new">
+            <svg class="icon header-catalog-link__icon"><use xlink:href="#person"></use></svg>
+            <span class="header-catalog-link__text">
+              Войти
+            </span>
+          </a>
+        </div>
+
+      <a href="https://lenta.com/shoppinglist/"
+          ga-on="click"
+          ga-event-category="migration:startpage"
+          ga-event-action="goToFavourite"
+          ga-event-label="Переход в Избранное"
+          class="header__favorite header-catalog-link header-catalog-link--favorite tooltip"
+          native>
+        <svg class="icon header-catalog-link__icon-favorite"><use xlink:href="#favorite"></use></svg>
+        <div class="header-catalog-link__counter-container">
+          <span class="header-catalog-link__counter js-sku-counter-favorite">
+            0
+          </span>
+        </div>
+      </a>
+
+        <a ga-on="click"
+            ga-event-category="migration:startpage"
+            ga-event-action="goToCart"
+            ga-event-label="Переход в Корзину"
+            href="https://lenta.com/order/cart/"
+            class="header__basket header-catalog-link header-catalog-link--basket">
+          <svg class="icon header-catalog-link__icon"><use xlink:href="#basket"></use></svg>
+          <div class="header-catalog-link__counter-container">
+            <span class="header-catalog-link__counter js-sku-counter-basket">
+              0
+            </span>
+          </div>
+        </a>
+
+    </div>
+
+    <div class="header__profile-menu">
+      <div class="header__profile-menu-inner">
+      </div>
+    </div>
+
+    </div>
+  </div>
+  <nav class="header__main-nav main-nav">
+
+    <div
+      class="js-store-picker header__location-picker"
+
+      data-store="{&quot;id&quot;:&quot;0006&quot;,&quot;address&quot;:&quot;д. Старо-Паново, ш. Таллинское, д. 159, лит. А&quot;,&quot;firstAddress&quot;:&quot;ш. Таллинское, д. 159, лит. А&quot;,&quot;secondAddress&quot;:&quot;г. Санкт-Петербург и ЛО, д. Старо-Паново&quot;,&quot;cityKey&quot;:&quot;spb&quot;,&quot;cityName&quot;:&quot;Санкт-Петербург и ЛО&quot;,&quot;type&quot;:&quot;hypermarket&quot;,&quot;lat&quot;:59.807053,&quot;long&quot;:30.162049,&quot;opensAt&quot;:&quot;0&quot;,&quot;closesAt&quot;:&quot;24&quot;,&quot;is24hStore&quot;:true,&quot;hasPetShop&quot;:false,&quot;hasTobaccoPoint&quot;:true,&quot;isEcomAvailable&quot;:true,&quot;isPickupAvailable&quot;:true,&quot;isDeliveryAvailable&quot;:true,&quot;typeName&quot;:&quot;Гипер Лента&quot;,&quot;typeColor&quot;:&quot;#FFB900&quot;}"
+      data-ga-event-category="catalog:header"
+      data-city-key="spb"
+
+      data-is-default-city="True"
+      data-is-default-store="True"
+      data-is-store-picked="False"
+      data-is-ecom-enabled="True"
+      data-is-pro-user-verified="False"
+      data-is-store-picker-closable="True"
+
+      data-should-render-address-container="True"
+      data-should-render-store-picker="False"
+
+      data-customer-id="3d869cf5-9024-4818-a216-0ac90e93b791"
+      data-is-authenticated="False"
+      data-customer-id-from-cookies="3d869cf5-9024-4818-a216-0ac90e93b791"
+
+      data-delivery-option="None"
+      data-delivery-address="null"
+      data-delivery-without-address-header-text=""
+      data-store-picker-text="Цены и ассортимент зависят от выбранного магазина"
+
+      data-da-data-client-public-key="2e380c3eb18fe9b7f96ad16e8b73c7ebe2f8dcb8"
+      data-addresses-service-gateway="Dadata"
+      data-yandex-api-key="24f04906-883e-4669-8e50-6c62f53b48eb"
+      data-delivery-option-default-value="Pickup"
+
+      data-search-request-threshold="1200"
+
+      data-is-pro-card-selected="False"
+      data-is-pro-verified="False"
+      data-pro-delivery-addresses="null"
+
+      data-should-set-delivery-option="True"
+
+      data-should-render-tooltip="False"
+      data-should-show-pro-redirect-popup="False"
+      data-redirect-delivery-popup="{&quot;redirectPopupTitle&quot;:&quot;Как вам удобно получить заказ?&quot;,&quot;redirectPopupDeliveryTileText&quot;:&quot;Оформить заказ с доставкой на сайте Ленты Онлайн&quot;,&quot;redirectPopupPickupTileText&quot;:&quot;Оформить заказ и забрать его из ближайшей Ленты&quot;,&quot;redirectPopupText&quot;:&quot;Переходите на сайт Ленты Онлайн, чтобы оформить заказ с доставкой&quot;,&quot;redirectTooltipText&quot;:&quot;Переходите на сайт Ленты Онлайн, чтобы оформить заказ с доставкой&quot;,&quot;redirectUrl&quot;:&quot;https://online.lenta.com/?fromLenta=true&quot;,&quot;shouldRenderPopup&quot;:true}">
+    </div>
+
+
+    <div class="main-nav__inner">
+      <div class="block dropdownblock col-lg-12 col-md-12 col-sm-12 col-xs-12  main-nav__item">  <div class="main-nav__item-label">
+
+      <a
+        ga-on="click"
+        ga-event-category="migration:header-nav"
+        ga-event-action="goToPage"
+        ga-event-label="Акции"
+        ga-event-non-interaction="false"
+        href="https://lenta.com/goods-actions/"
+        class="main-nav__item-link"
+        
+        native>
+        Акции
+        <div class="main-nav__toggle-icon">
+          <svg class="icon "><use xlink:href="#chevron-up"></use></svg>
+        </div>
+      </a>
+  </div>
+    <div class="main-nav__item-select">
+
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Все акции"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/l/goods-actions/main/"
+          class="main-nav__item-option"
+          
+          native>
+          Все акции
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Карта №1"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/l/karta1/"
+          class="main-nav__item-option"
+          
+          native>
+          Карта №1
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Кешбэк за покупки"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/l/cashback/"
+          class="main-nav__item-option"
+          
+          native>
+          Кешбэк за покупки
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Товары со скидками"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/promo/"
+          class="main-nav__item-option"
+          
+          native>
+          Товары со скидками
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Баллы за отзывы"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/landings/lentaonly/"
+          class="main-nav__item-option"
+          
+          native>
+          Баллы за отзывы
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Клуб &#171;Хэппи Лента&#187;"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/l/happyclub/"
+          class="main-nav__item-option"
+          target = _blank
+          native>
+          Клуб &#171;Хэппи Лента&#187;
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Скидки за фишки"
+          ga-event-non-interaction="false"
+          href="https://fishki.lenta.com/"
+          class="main-nav__item-option"
+          target = _blank
+          native>
+          Скидки за фишки
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Лайфхаки для экономии"
+          ga-event-non-interaction="false"
+          href="https://smart.lenta.com/"
+          class="main-nav__item-option"
+          target = _blank
+          native>
+          Лайфхаки для экономии
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Покупателям"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/clients/"
+          class="main-nav__item-option"
+          
+          native>
+          Покупателям
+        </a>
+
+    </div>
+</div><div class="block mainsitemenuitemblock col-lg-12 col-md-12 col-sm-12 col-xs-12  main-nav__item">  <div class="main-nav__item-link">
+    <a
+     ga-on="click"
+     ga-event-category="migration:header-nav"
+     ga-event-action="goToPage"
+     ga-event-label="Каталоги скидок"
+     ga-event-non-interaction="false"
+     href="https://lenta.com/l/catalogues/" 
+     class="main-nav__item-label" 
+     native>
+      Каталоги скидок
+    </a>
+  </div>
+</div><div class="block dropdownblock col-lg-12 col-md-12 col-sm-12 col-xs-12  main-nav__item">  <div class="main-nav__item-label">
+
+      <a
+        ga-on="click"
+        ga-event-category="migration:header-nav"
+        ga-event-action="goToPage"
+        ga-event-label="Рецепты"
+        ga-event-non-interaction="false"
+        href="https://lenta.com/recepty/"
+        class="main-nav__item-link"
+        
+        native>
+        Рецепты
+        <div class="main-nav__toggle-icon">
+          <svg class="icon "><use xlink:href="#chevron-up"></use></svg>
+        </div>
+      </a>
+  </div>
+    <div class="main-nav__item-select">
+
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Каталог рецептов"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/recepty/catalog-recepty/"
+          class="main-nav__item-option"
+          
+          native>
+          Каталог рецептов
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Статьи"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/recepty/articles-catalog/"
+          class="main-nav__item-option"
+          
+          native>
+          Статьи
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:header-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Избранное"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/shoppinglist/?tab=recipes"
+          class="main-nav__item-option"
+          
+          native>
+          Избранное
+        </a>
+
+    </div>
+</div><div class="block externallinkblock col-lg-12 col-md-12 col-sm-12 col-xs-12  main-nav__item">  <div class="main-nav__item-link">
+    <a
+     ga-on="click"
+     ga-event-category="migration:header-nav"
+     ga-event-action="goToPage"
+     ga-event-label="Для бизнеса"
+     ga-event-non-interaction="false"
+     href="https://lenta.com/l/pro/" 
+     class="main-nav__item-label" target = _blank
+     native>
+      Для бизнеса
+    </a>
+  </div>
+</div><div class="block externallinkblock col-lg-12 col-md-12 col-sm-12 col-xs-12  main-nav__item">  <div class="main-nav__item-link">
+    <a
+     ga-on="click"
+     ga-event-category="migration:header-nav"
+     ga-event-action="goToPage"
+     ga-event-label="Работа в Ленте"
+     ga-event-non-interaction="false"
+     href="https://career.lenta.com/" 
+     class="main-nav__item-label" target = _blank
+     native>
+      Работа в Ленте
+    </a>
+  </div>
+</div>
+    </div>
+  </nav>
+  <div class="header__menu">
+
+    <nav class="header__menu-nav main-nav--menu">
+      <div class="header__menu-nav-repetition">
+
+        <div class="main-nav__item main-nav__item--city js-store-picker-mobile">
+          <div class="main-nav__item-link">
+
+            <div class="main-nav__item-delivery-info">
+              <svg class="icon main-nav__item-location-icon"><use xlink:href="#location"></use></svg>
+              <span class="main-nav__item-store-text">Самовывоз из магазина</span>
+            </div>
+
+            <div class="main-nav__item-address-wrapper">
+              <span class="main-nav__item-address">д. Старо-Паново, ш. Таллинское, д. 159, лит. А</span>
+              <svg class="icon main-nav__item-chevron-icon"><use xlink:href="#chevron-right-regular"></use></svg>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div
+          ga-on="click"
+             ga-event-category="catalog:header"
+             ga-event-action="goToCatalog"
+             class="main-nav__item main-nav__item--catalog-link js-catalog-menu-toggle"
+             data-menu="{&quot;catalogUrl&quot;:&quot;https://lenta.com/catalog/&quot;,&quot;shoppingListUrl&quot;:&quot;https://lenta.com/shoppinglist/&quot;,&quot;searchPageUrl&quot;:&quot;https://lenta.com/search/&quot;,&quot;ecomListUrl&quot;:&quot;https://lenta.com/order/cart/&quot;}"
+          >
+          <a href="#" class="main-nav__item-link" native>
+            <svg class="icon main-nav__item-logo-icon"><use xlink:href="#sunflower"></use></svg>
+            <span>Каталог</span>
+            <svg class="icon main-nav__item-chevron-icon"><use xlink:href="#chevron-right-regular"></use></svg>
+          </a>
+        </div>
+
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Акции в магазинах
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Акции в магазинах"
+                       href="https://lenta.com/goods-actions/"
+                       class="nav-item__option-link"
+                       native>
+                      Акции в магазинах
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Акция! Скидка. Дня."
+                       href="https://lenta.com/crazy/"
+                       class="nav-item__option-link"
+                       native>
+                      Акция! Скидка. Дня.
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Товары со скидками"
+                       href="https://lenta.com/promo/"
+                       class="nav-item__option-link"
+                       native>
+                      Товары со скидками
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Баллы за отзывы"
+                       href="https://lenta.com/landings/lentaonly/"
+                       class="nav-item__option-link"
+                       native>
+                      Баллы за отзывы
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Скидки за фишки"
+                       href="https://lenta.com/stamps/?_ga=2.59508845.1129620685.1602484422-1389149725.1594797293"
+                       class="nav-item__option-link"
+                       native>
+                      Скидки за фишки
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Лайфхаки для экономии"
+                       href="https://smart.lenta.com/"
+                       class="nav-item__option-link"
+                       native>
+                      Лайфхаки для экономии
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Карта №1
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Карта №1"
+                       href="https://lenta.com/l/karta1/"
+                       class="nav-item__option-link"
+                       native>
+                      Карта №1
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Кешбэк за любимые категории"
+                       href="https://lenta.com/l/cashback/"
+                       class="nav-item__option-link"
+                       native>
+                      Кешбэк за любимые категории
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Правила использования бонусных баллов"
+                       href="https://lenta.com/pokupatelyam/karta-pokupatelya/pravila-ispolzovaniya-bonusnykh-ballov/"
+                       class="nav-item__option-link"
+                       native>
+                      Правила использования бонусных баллов
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Скидка в день рождения"
+                       href="https://lenta.com/o-kompanii/proekty/bd/"
+                       class="nav-item__option-link"
+                       native>
+                      Скидка в день рождения
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Клуб &#171;Лента бар&#187;"
+                       href="https://lenta.com/clubs/bar/main/"
+                       class="nav-item__option-link"
+                       native>
+                      Клуб &#171;Лента бар&#187;
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Клуб &#171;Хэппи Лента&#187;"
+                       href="https://lenta.com/l/happyclub/"
+                       class="nav-item__option-link"
+                       native>
+                      Клуб &#171;Хэппи Лента&#187;
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Детские социальные карты"
+                       href="https://lenta.com/pokupatelyam/karta-pokupatelya/detskie-sotsialnye-karty/"
+                       class="nav-item__option-link"
+                       native>
+                      Детские социальные карты
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item">
+              <a ga-on="click"
+                 ga-event-category="migration:mobile-menu"
+                 ga-event-action="goToPage"
+                 ga-event-label="Каталоги скидок"
+                 href="https://lenta.com/l/catalogues/"
+                 class="main-nav__item-link"
+                 native>
+                Каталоги скидок
+              </a>
+            </div>
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Подарочные карты
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Подарочные карты"
+                       href="https://lenta.com/gift-cards/"
+                       class="nav-item__option-link"
+                       native>
+                      Подарочные карты
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Пластиковая подарочная карта"
+                       href="https://lenta.com/gift-cards/podarochnaya-karta/"
+                       class="nav-item__option-link"
+                       native>
+                      Пластиковая подарочная карта
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Электронная подарочная карта"
+                       href="https://lenta.com/e-card/"
+                       class="nav-item__option-link"
+                       native>
+                      Электронная подарочная карта
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item">
+              <a ga-on="click"
+                 ga-event-category="migration:mobile-menu"
+                 ga-event-action="goToPage"
+                 ga-event-label="Мобильное приложение"
+                 href="https://redirect.appmetrica.yandex.com/serve/748693644952765996?utm_source=lenta_com&amp;utm_medium=web&amp;utm_campaign=mob_menu"
+                 class="main-nav__item-link"
+                 native>
+                Мобильное приложение
+              </a>
+            </div>
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Магазины
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Магазины"
+                       href="https://lenta.com/allmarkets/"
+                       class="nav-item__option-link"
+                       native>
+                      Магазины
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Гипер Лента"
+                       href="https://lenta.com/allmarkets/hypermarkets/"
+                       class="nav-item__option-link"
+                       native>
+                      Гипер Лента
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Супер Лента"
+                       href="https://lenta.com/allmarkets/supermarkets/"
+                       class="nav-item__option-link"
+                       native>
+                      Супер Лента
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Мини Лента"
+                       href="https://lenta.com/allmarkets/mini_lenta/"
+                       class="nav-item__option-link"
+                       native>
+                      Мини Лента
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Эконом"
+                       href="https://lenta.com/allmarkets/lentaeconom/"
+                       class="nav-item__option-link"
+                       native>
+                      Эконом
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Лента Зоомаркет"
+                       href="https://lenta.com/allmarkets/zoo/"
+                       class="nav-item__option-link"
+                       native>
+                      Лента Зоомаркет
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Вингараж"
+                       href="https://lenta.com/allmarkets/wingarage/"
+                       class="nav-item__option-link"
+                       native>
+                      Вингараж
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Дополнительные услуги"
+                       href="https://lenta.com/pokupatelyam/dopolnitelnye-uslugi/"
+                       class="nav-item__option-link"
+                       native>
+                      Дополнительные услуги
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item">
+              <a ga-on="click"
+                 ga-event-category="migration:mobile-menu"
+                 ga-event-action="goToPage"
+                 ga-event-label="Работа в &#171;Ленте&#187;"
+                 href="https://career.lenta.com/?_ga=2.213472214.311356132.1675669119-515091912.1669705109"
+                 class="main-nav__item-link"
+                 native>
+                Работа в &#171;Ленте&#187;
+              </a>
+            </div>
+            <div class="main-nav__item">
+              <a ga-on="click"
+                 ga-event-category="migration:mobile-menu"
+                 ga-event-action="goToPage"
+                 ga-event-label="&#171;Лента PRO&#187; для бизнеса"
+                 href="https://lenta.com/l/pro/"
+                 class="main-nav__item-link"
+                 native>
+                &#171;Лента PRO&#187; для бизнеса
+              </a>
+            </div>
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Рецепты
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Рецепты"
+                       href="https://lenta.com/recepty/"
+                       class="nav-item__option-link"
+                       native>
+                      Рецепты
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Каталог рецептов"
+                       href="https://lenta.com/recepty/catalog-recepty/"
+                       class="nav-item__option-link"
+                       native>
+                      Каталог рецептов
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Статьи"
+                       href="https://lenta.com/recepty/articles-catalog/"
+                       class="nav-item__option-link"
+                       native>
+                      Статьи
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Избранное"
+                       href="https://lenta.com/shoppinglist/?tab=recipes"
+                       class="nav-item__option-link"
+                       native>
+                      Избранное
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Лента Magazine"
+                       href="http://lentamag.lenta.com/"
+                       class="nav-item__option-link"
+                       native>
+                      Лента Magazine
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Онлайн-заказы
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Онлайн-заказы"
+                       href="https://lenta.com/pokupatelyam/online-sale/"
+                       class="nav-item__option-link"
+                       native>
+                      Онлайн-заказы
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Как заказать"
+                       href="https://lenta.com/l/pokupatelyam/dostavka-produktov/"
+                       class="nav-item__option-link"
+                       native>
+                      Как заказать
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Самовывоз и оплата"
+                       href="https://lenta.com/pokupatelyam/online-sale/delivery/"
+                       class="nav-item__option-link"
+                       native>
+                      Самовывоз и оплата
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Доставка продуктов"
+                       href="https://lenta.com/l/dostavka_produktov/"
+                       class="nav-item__option-link"
+                       native>
+                      Доставка продуктов
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Пользовательское соглашение"
+                       href="https://lenta.com/pokupatelyam/online-sale/user-agreement/"
+                       class="nav-item__option-link"
+                       native>
+                      Пользовательское соглашение
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Вопросы и ответы"
+                       href="https://lenta.com/pokupatelyam/online-sale/faq/"
+                       class="nav-item__option-link"
+                       native>
+                      Вопросы и ответы
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Эксклюзивные бренды
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Эксклюзивные бренды"
+                       href="https://lenta.com/sobstvennie-marki/"
+                       class="nav-item__option-link"
+                       native>
+                      Эксклюзивные бренды
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="365 дней"
+                       href="https://lenta.com/sobstvennie-marki/365-dnei/"
+                       class="nav-item__option-link"
+                       native>
+                      365 дней
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="ЛЕНТА"
+                       href="https://lenta.com/sobstvennie-marki/Lenta/"
+                       class="nav-item__option-link"
+                       native>
+                      ЛЕНТА
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="ЛЕНТА FRESH"
+                       href="https://lenta.com/l/lentafresh/"
+                       class="nav-item__option-link"
+                       native>
+                      ЛЕНТА FRESH
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="ЛЕНТА LIFE"
+                       href="https://lenta.com/sobstvennie-marki/lenta-life/"
+                       class="nav-item__option-link"
+                       native>
+                      ЛЕНТА LIFE
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Dolce Albero"
+                       href="https://lenta.com/sobstvennie-marki/Dolce-Albero/"
+                       class="nav-item__option-link"
+                       native>
+                      Dolce Albero
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Bonvida"
+                       href="https://lenta.com/sobstvennie-marki/Bonvida/"
+                       class="nav-item__option-link"
+                       native>
+                      Bonvida
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Premium Club"
+                       href="https://lenta.com/sobstvennie-marki/premium-club/"
+                       class="nav-item__option-link"
+                       native>
+                      Premium Club
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Delisse"
+                       href="https://lenta.com/l/sobstvennie-marki/delisse/"
+                       class="nav-item__option-link"
+                       native>
+                      Delisse
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="ВАУ МЯУ!"
+                       href="https://lenta.com/sobstvennie-marki/vau-myau/"
+                       class="nav-item__option-link"
+                       native>
+                      ВАУ МЯУ!
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Наше Дело"
+                       href="https://lenta.com/sobstvennie-marki/nashe-delo/"
+                       class="nav-item__option-link"
+                       native>
+                      Наше Дело
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Друже"
+                       href="https://lenta.com/sobstvennie-marki/druzhe/"
+                       class="nav-item__option-link"
+                       native>
+                      Друже
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Smakky"
+                       href="https://lenta.com/sobstvennie-marki/smakky/"
+                       class="nav-item__option-link"
+                       native>
+                      Smakky
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Little Times"
+                       href="https://lenta.com/sobstvennie-marki/Little-Times/"
+                       class="nav-item__option-link"
+                       native>
+                      Little Times
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="HOMECLUB"
+                       href="https://lenta.com/sobstvennie-marki/HOMECLUB/"
+                       class="nav-item__option-link"
+                       native>
+                      HOMECLUB
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="HUNTY"
+                       href="https://lenta.com/sobstvennie-marki/HUNTY/"
+                       class="nav-item__option-link"
+                       native>
+                      HUNTY
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="FRELIA"
+                       href="https://lenta.com/sobstvennie-marki/FRELIA/"
+                       class="nav-item__option-link"
+                       native>
+                      FRELIA
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Jenna"
+                       href="https://lenta.com/sobstvennie-marki/jenna/"
+                       class="nav-item__option-link"
+                       native>
+                      Jenna
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="INWIN"
+                       href="https://lenta.com/sobstvennie-marki/INWIN/"
+                       class="nav-item__option-link"
+                       native>
+                      INWIN
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="ACTIWELL"
+                       href="https://lenta.com/sobstvennie-marki/ACTIWELL/"
+                       class="nav-item__option-link"
+                       native>
+                      ACTIWELL
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="WELGOT"
+                       href="https://lenta.com/sobstvennie-marki/welgot/"
+                       class="nav-item__option-link"
+                       native>
+                      WELGOT
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Lentel"
+                       href="https://lenta.com/sobstvennie-marki/Lentel/"
+                       class="nav-item__option-link"
+                       native>
+                      Lentel
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Giardino Club"
+                       href="https://lenta.com/sobstvennie-marki/Giardino-Club/"
+                       class="nav-item__option-link"
+                       native>
+                      Giardino Club
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Bigga"
+                       href="https://lenta.com/sobstvennie-marki/Bigga/"
+                       class="nav-item__option-link"
+                       native>
+                      Bigga
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="LolaFun"
+                       href="https://lenta.com/sobstvennie-marki/lolafun/"
+                       class="nav-item__option-link"
+                       native>
+                      LolaFun
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Крок&amp;Дилли"
+                       href="https://lenta.com/sobstvennie-marki/krokdilli/"
+                       class="nav-item__option-link"
+                       native>
+                      Крок&amp;Дилли
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Rush&amp;Crush"
+                       href="https://lenta.com/sobstvennie-marki/rushcrush/"
+                       class="nav-item__option-link"
+                       native>
+                      Rush&amp;Crush
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="INO"
+                       href="https://lenta.com/sobstvennie-marki/ino/"
+                       class="nav-item__option-link"
+                       native>
+                      INO
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="WISH FISH"
+                       href="https://lenta.com/sobstvennie-marki/wish-fish/"
+                       class="nav-item__option-link"
+                       native>
+                      WISH FISH
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Покупателям
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Покупателям"
+                       href="https://lenta.com/clients/"
+                       class="nav-item__option-link"
+                       native>
+                      Покупателям
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Часто задаваемые вопросы и обратная связь"
+                       href="https://lenta.com/pokupatelyam/chasto-zadavaemye-voprosy-i-obratnaya-svyaz/"
+                       class="nav-item__option-link"
+                       native>
+                      Часто задаваемые вопросы и обратная связь
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Частная торговая марка"
+                       href="https://lenta.com/pokupatelyam/chastnaya-torgovaya-marka/"
+                       class="nav-item__option-link"
+                       native>
+                      Частная торговая марка
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Электронные каталоги"
+                       href="https://lenta.com/digital-catalogues_old/"
+                       class="nav-item__option-link"
+                       native>
+                      Электронные каталоги
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Политика Ленты в отношении обработки персональных данных"
+                       href="https://lenta.com/pokupatelyam/privacy-policy/"
+                       class="nav-item__option-link"
+                       native>
+                      Политика Ленты в отношении обработки персональных данных
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Правила применения рекомендательных технологий"
+                       href="https://lenta.com/pokupatelyam/recommendation-technologies/"
+                       class="nav-item__option-link"
+                       native>
+                      Правила применения рекомендательных технологий
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Правила предоставления скидок на округление"
+                       href="https://lenta.com/pokupatelyam/pravila-predostavleniya-skidok-na-okruglenie/"
+                       class="nav-item__option-link"
+                       native>
+                      Правила предоставления скидок на округление
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Правила подписки на электронные рассылки компании &quot;Лента&quot;"
+                       href="https://lenta.com/pokupatelyam/pravila-podpiski-na-elektronnye-rassylki-kompanii-lenta/"
+                       class="nav-item__option-link"
+                       native>
+                      Правила подписки на электронные рассылки компании &quot;Лента&quot;
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Политика возвратов"
+                       href="https://lenta.com/pokupatelyam/politika-vozvratov/"
+                       class="nav-item__option-link"
+                       native>
+                      Политика возвратов
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Качество товаров"
+                       href="https://lenta.com/pokupatelyam/kachestvo-tovarov/"
+                       class="nav-item__option-link"
+                       native>
+                      Качество товаров
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Правила размещения отзывов и оценки товаров"
+                       href="https://lenta.com/pokupatelyam/rules-for-posting-reviews/"
+                       class="nav-item__option-link"
+                       native>
+                      Правила размещения отзывов и оценки товаров
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Информация о компании
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Информация о компании"
+                       href="https://lenta.com/o-kompanii/klyuchevye-fakty/"
+                       class="nav-item__option-link"
+                       native>
+                      Информация о компании
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="О компании"
+                       href="https://lenta.com/o-kompanii/"
+                       class="nav-item__option-link"
+                       native>
+                      О компании
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Ключевые факты"
+                       href="https://lenta.com/o-kompanii/klyuchevye-fakty/"
+                       class="nav-item__option-link"
+                       native>
+                      Ключевые факты
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Миссия и ценности"
+                       href="https://lenta.com/o-kompanii/missiya-i-tsennosti/"
+                       class="nav-item__option-link"
+                       native>
+                      Миссия и ценности
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Стратегия"
+                       href="https://lenta.com/o-kompanii/strategiya/"
+                       class="nav-item__option-link"
+                       native>
+                      Стратегия
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="История"
+                       href="https://lenta.com/o-kompanii/istoriya/"
+                       class="nav-item__option-link"
+                       native>
+                      История
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Пресс-центр"
+                       href="https://lenta.com/o-kompanii/news/"
+                       class="nav-item__option-link"
+                       native>
+                      Пресс-центр
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Комитет по этике"
+                       href="https://lenta.com/o-kompanii/eticheskiy-komitet/"
+                       class="nav-item__option-link"
+                       native>
+                      Комитет по этике
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Социальная ответственность"
+                       href="https://lenta.com/o-kompanii/sotsialnaya-otvetstvennost/"
+                       class="nav-item__option-link"
+                       native>
+                      Социальная ответственность
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Раскрытие информации"
+                       href="https://lenta.com/o-kompanii/raskrytie-informatsii/"
+                       class="nav-item__option-link"
+                       native>
+                      Раскрытие информации
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Страница эмитента на сайте аккредитованного агентства"
+                       href="https://www.e-disclosure.ru/portal/company.aspx?id=32010"
+                       class="nav-item__option-link"
+                       native>
+                      Страница эмитента на сайте аккредитованного агентства
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Контакты
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Контакты"
+                       href="https://lenta.com/kontakty/"
+                       class="nav-item__option-link"
+                       native>
+                      Контакты
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Контактная информация"
+                       href="https://lenta.com/o-kompanii/kontaktnaya-informatsiya/"
+                       class="nav-item__option-link"
+                       native>
+                      Контактная информация
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="&quot;Лента&quot; в мессенджерах"
+                       href="https://lenta.com/pokupatelyam/lenta-v-messendzherakh/"
+                       class="nav-item__option-link"
+                       native>
+                      &quot;Лента&quot; в мессенджерах
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Чат-боты"
+                       href="https://lenta.com/kontakty/chat_bot/"
+                       class="nav-item__option-link"
+                       native>
+                      Чат-боты
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item js-nav-item">
+              <div class="nav-item">
+
+                <div class="nav-item__label">
+                  Поставщикам
+                  <svg class="icon nav-item__label-chevron"><use xlink:href="#chevron-down-regular"></use></svg>
+                </div>
+
+                <div class="nav-item__select">
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Поставщикам"
+                       href="https://lenta.com/postavshchikam/"
+                       class="nav-item__option-link"
+                       native>
+                      Поставщикам
+                    </a>
+
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Оставить коммерческое предложение"
+                       href="https://lenta.com/postavshchikam/ostavit-kommercheskoe-predlozhenie/"
+                       class="nav-item__option-link"
+                       native>
+                      Оставить коммерческое предложение
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Логистика"
+                       href="https://lenta.com/postavshchikam/logistika/"
+                       class="nav-item__option-link"
+                       native>
+                      Логистика
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Обратная связь"
+                       href="https://lenta.com/postavshchikam/obratnaya-svyaz/"
+                       class="nav-item__option-link"
+                       native>
+                      Обратная связь
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Кодекс добросовестных практик"
+                       href="https://lenta.com/postavshchikam/kodeks-dobrosovestnykh-praktik/"
+                       class="nav-item__option-link"
+                       native>
+                      Кодекс добросовестных практик
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Контроль качества"
+                       href="https://lenta.com/postavshchikam/kontrol-kachestva/"
+                       class="nav-item__option-link"
+                       native>
+                      Контроль качества
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Контроль за соблюдением Прейскуранта"
+                       href="https://lenta.com/postavshchikam/kontrol-za-soblyudeniem-preyskuranta/"
+                       class="nav-item__option-link"
+                       native>
+                      Контроль за соблюдением Прейскуранта
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Лента PRO для бизнеса"
+                       href="https://lenta.com/l/pro/"
+                       class="nav-item__option-link"
+                       native>
+                      Лента PRO для бизнеса
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Лента ОПТ"
+                       href="https://lenta.com/optovikam/"
+                       class="nav-item__option-link"
+                       native>
+                      Лента ОПТ
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Поставщикам Службы некоммерческих закупок"
+                       href="https://lenta.com/postavshchikam/non-commercial-purchasing-service/"
+                       class="nav-item__option-link"
+                       native>
+                      Поставщикам Службы некоммерческих закупок
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Партнёрская программа финансирования от ООО &#171;Сбербанк Факторинг&#187;"
+                       href="https://lenta.com/postavshchikam/sberbank-factoring/"
+                       class="nav-item__option-link"
+                       native>
+                      Партнёрская программа финансирования от ООО &#171;Сбербанк Факторинг&#187;
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Коммерческие тендеры"
+                       href="https://lenta.com/postavshchikam/tenders/"
+                       class="nav-item__option-link"
+                       native>
+                      Коммерческие тендеры
+                    </a>
+                    <a ga-on="click"
+                       ga-event-category="migration:mobile-menu"
+                       ga-event-action="goToPage"
+                       ga-event-label="Поставщикам товара - Контакты и адреса фронт офисов"
+                       href="https://lenta.com/postavshchikam/contacts-and-addresses/"
+                       class="nav-item__option-link"
+                       native>
+                      Поставщикам товара - Контакты и адреса фронт офисов
+                    </a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="main-nav__item">
+              <a ga-on="click"
+                 ga-event-category="migration:mobile-menu"
+                 ga-event-action="goToPage"
+                 ga-event-label="Реклама в &#171;Ленте&#187;"
+                 href="https://lenta.com/reklamodatelyam/"
+                 class="main-nav__item-link"
+                 native>
+                Реклама в &#171;Ленте&#187;
+              </a>
+            </div>
+            <div class="main-nav__item">
+              <a ga-on="click"
+                 ga-event-category="migration:mobile-menu"
+                 ga-event-action="goToPage"
+                 ga-event-label="Арендаторам"
+                 href="https://lenta.com/arendatoram1/"
+                 class="main-nav__item-link"
+                 native>
+                Арендаторам
+              </a>
+            </div>
+            <div class="main-nav__item">
+              <a ga-on="click"
+                 ga-event-category="migration:mobile-menu"
+                 ga-event-action="goToPage"
+                 ga-event-label="Собственникам недвижимости"
+                 href="https://lenta.com/to-landlords/"
+                 class="main-nav__item-link"
+                 native>
+                Собственникам недвижимости
+              </a>
+            </div>
+            <div class="main-nav__item">
+              <a ga-on="click"
+                 ga-event-category="migration:mobile-menu"
+                 ga-event-action="goToPage"
+                 ga-event-label="Инвесторам"
+                 href="http://www.lentainvestor.com/en/"
+                 class="main-nav__item-link"
+                 native>
+                Инвесторам
+              </a>
+            </div>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+  <div class="js-switch-user-type-modal"></div>
+
+  <div
+    class="js-adult-popup"
+    data-adult-popup="{&quot;shouldRenderAdultPopup&quot;:false}"
+    data-return-url="https://lenta.com/catalog/"
+  ></div>
+
+</header>
+
+
+        <main class="page__main">
+          
+
+  <article class="article landing-page">
+
+    
+
+  <nav class="breadcrumbs breadcrumbs--no-h-spacing" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+      <span class="breadcrumbs__crumb" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+        <a href="/" class="breadcrumbs__link" itemprop="item">
+          <span itemprop="name">Главная</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </span>
+<svg class="icon breadcrumbs__sep"><use xlink:href="#chevron-right-regular"></use></svg>      <span class="breadcrumbs__crumb" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+        <a class="breadcrumbs__link" itemprop="item">
+          <span itemprop="name">Лента-Центр</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </span>
+
+
+  </nav>
+
+
+    <div><div class="block mainsiterichtextblock col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
+
+  <div class="message-text-block">
+    <!--<p><span style="font-size: 14pt;">Уважаемые покупатели!</span></p>
+<p><span style="font-size: 14pt;">Из-за технических сложностей сайт более недоступен. Использование действующих и выдача новых карт лояльности также по техническим причинам приостановлены.</span></p>
+<p><span style="font-size: 14pt;">Мы продолжаем работать для вас, радовать низкими ценами, скидками и акциями.</span></p>
+<p><span style="font-size: 14pt;">Все магазины будут работать под брендом &laquo;Супер Лента&raquo;. А это значит, что вы можете оформить Карту №1* и использовать все её преимущества, скидки и персональные предложения для максимальной выгоды ваших покупок.</span></p>
+<p><span style="font-size: 14pt;"><strong>Магазины, которые временно закрываются, для того, чтобы открыться для вас под брендом &laquo;Супер Лента&raquo;:</strong></span></p>
+<table style="width: 512px; display: block; max-width: 100%; border-color: #d9d9d9; border-collapse: collapse; overflow-x: auto;">
+<thead>
+<tr style="height: 18px; background-color: #003b96; color: white;">
+<th style="width: 337px; height: 18px; text-align: center;"><span style="font-size: 14pt;">Магазин</span></th>
+<th style="width: 175px; height: 18px; text-align: center;"><span style="font-size: 14pt;">Даты закрытия</span></th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;">&nbsp;г. Москва, Щелковское ш., д. 27 А</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">&nbsp;г. Москва, Талалихина ул., д. 3</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">&nbsp;г. Москва, Кировоградская ул., д. 9</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">&nbsp;г. Москва, Чусовская ул., д.13</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">г. Красногорск, ул. Большая Воскресенская, 1</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">&nbsp;г. Москва, Зеленый пр-т, д. 24</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">&nbsp;г. Москва, Берингов пр-д, д. 3, стр. 6</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">&nbsp;г. Москва, Живописная ул., д. 12, корп. 1&nbsp;</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">&nbsp;г. Москва, Волгоградский пр-т, д. 73, стр. 1&nbsp;</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">&nbsp;г. Москва, Широкая ул., д. 31</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">&nbsp;г. Москва, Прокатная ул., д. 2</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="217">&nbsp;г. Москва, Перовская ул., д. 32</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;" width="41">г. Москва, Руставели, д.8, корп.2</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;">г. Москва, Боровское ш., д. 37, к. 2</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;">г. Москва, Измайловский б-р, д. 60/10</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;">г. Реутов, Носовихинское ш., 7</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+<tr style="height: 36px; border-bottom: 1pt solid #f0f0f0;">
+<td style="width: 337px;">г. Москва, Партизанская ул., 10</td>
+<td style="width: 175px; text-align: center;">с <strong>11.05.22</strong> по <strong>12.05.22</strong></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 14pt;">Ждем вас за самыми выгодными покупками!</span></p>-->
+<p><span style="font-size: 14pt;">Уважаемые покупатели!</span></p>
+<p><span style="font-size: 14pt;">Из-за технических сложностей сайт более недоступен. Использование действующих и выдача новых карт лояльности приостановлены по техническим причинам.</span></p>
+<p><span style="font-size: 14pt;">Сейчас все магазины сейчас работают под брендом &laquo;Супер-Лента&raquo;. А это значит, что вы можете оформить Карту №1 и использовать все её преимущества, скидки и персональные предложения для максимальной выгоды ваших покупок.</span></p>
+<p><a class="link" href="https://lenta.com/globalassets/-7/Billa/Perechen-rabotayushchikh-magazinov_1205.pdf" target="_blank" rel="noopener"><span style="font-size: 14pt;"><strong><u>Перечень работающих магазинов</u></strong></span></a></p>
+<p><span style="font-size: 14pt;">По графику работы магазинов, а также по любым другим возникающим у вас вопросам обращайтесь в&nbsp;</span><strong><span style="font-size: 14pt;">Центр информационной поддержки клиентов:</span></strong></p>
+<p><strong><span style="font-size: 14pt;">Телефоны:</span></strong><br /><span style="font-size: 14pt;">8 (495) 777-41-11 (Москва и МО)</span><br /><span style="font-size: 14pt;">8-800-700-41-11 (бесплатный звонок по всей России)</span><br /><span style="font-size: 14pt;">Электронная почта:&nbsp;<a class="link" href="mailto:info@lenta.com">info@lenta.com</a></span></p>
+<div><img style="float: left;" src="https://lenta.com/contentassets/1d19a02e1bf74a928d5dcc7bf48308e2/icon_telegram-sm.jpg" alt="icon_telegram-sm.jpg" width="30" height="31" /></div>
+<div style="text-align: justify; padding-left: 30px;">&nbsp; <span style="font-size: 14pt;"><a class="link" href="https://tgtg.su/LENTAcompany_bot" target="_blank" rel="noopener">написать в Telegram</a></span></div>
+<div style="text-align: justify; padding-left: 30px;">&nbsp;</div>
+<div><img style="float: left;" src="https://lenta.com/contentassets/1d19a02e1bf74a928d5dcc7bf48308e2/whatsapp_30x30px_whatsapp_30x30px.jpg" alt="whatsapp_30x30px_whatsapp_30x30px.jpg" width="30" height="30" /></div>
+<div style="text-align: justify; padding-left: 30px;">&nbsp; <span style="font-size: 14pt;"><a class="messengerItem whatsapp link" href="https://api.whatsapp.com/send?phone=79817336545&amp;text=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D1%8C%D1%82%D0%B5+%D1%8D%D1%82%D0%BE+%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%2C+%D1%87%D1%82%D0%BE%D0%B1%D1%8B+%D0%BD%D0%B0%D1%87%D0%B0%D1%82%D1%8C+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83+%D1%81+%D1%87%D0%B0%D1%82-%D0%B1%D0%BE%D1%82%D0%BE%D0%BC%21">написать в Whatsapp</a></span></div>
+  </div>
+</div><div class="block formconstructorblock col-lg-12 col-md-12 col-sm-12 col-xs-12  "></div><div class="block commonhtmlblock col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
+
+
+  <div class="show-block">
+
+    <div class="common-html-block">
+      <p>&nbsp;</p>
+<img src="/globalassets/-7/Billa/24-03/_.png" class="responsive" width="100%" height="100%" />
+    </div>
+
+  </div>
+</div><div class="block mainsiterichtextblock col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
+
+  <div class="message-text-block">
+    <p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 24pt;">Если у вас еще нет Карты №1*, оформите её всего за несколько минут!</span></p>
+  </div>
+</div><div class="block landingtextwithimageblock col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
+  <div class="show-block">
+    <div class="landing-image-text landing-image-text--text-on-left">
+
+      <div class="landing-image-text__title">
+        
+      </div>
+
+      <div class="landing-image-text__image-block">
+        
+
+<img src="https://lenta.servicecdn.ru/globalassets/-7/Billa/24-03/img_1_cat-.png" class="landing-image-text__image"  />
+
+      </div>
+
+      <div class="landing-image-text__subtitle landing-image-text__subtitle--without-title">
+        <p><span style="font-size: 14pt;"><strong>Способ №1.</strong> Выпустите виртуальную Карту №1* в мобильном приложении &laquo;Лента&raquo;.</span></p>
+<p><span style="font-size: 14pt;"><a class="supplier-questionary__button button button--small button--link" href="https://lenta.com/pokupatelyam/mobilnoe-prilozhenie/"><span style="color: #ffffff;">Выпустить Карту №1</span></a></span></p>
+<p><span style="font-size: 14pt;"><strong>Способ №2.&nbsp;</strong>Выпустите пластиковую Карту №1*, для этого:</span></p>
+<p><span style="font-size: 14pt;">1.Заполните анкету любым удобным способом:</span></p>
+<ul>
+<li><span style="font-size: 14pt;">на планшетах, размещённых в магазинах &laquo;Лента&raquo;;</span></li>
+<li><span style="font-size: 14pt;">позвонив по телефону 8-800-700-41-11;</span></li>
+<li><span style="font-size: 14pt;">или прямо сейчас на сайте.</span></li>
+</ul>
+<p><span style="font-size: 14pt;"><a class="supplier-questionary__button button button--small button--link" href="https://lenta.com/npl/authentication/registration/"><span style="color: #ffffff;">Заполнить анкету</span></a></span></p>
+<p><span style="font-size: 14pt;">2. Получите пластиковую Карту №1* на кассе в магазине. Стоимость пластиковой карты составит 20 рублей.</span></p>
+<p><span style="font-size: 14pt;">&ndash; Предъявите свою старую карту &laquo;Billa&raquo; на кассе и получите Карту №1* совершенно бесплатно;</span></p>
+<p><span style="font-size: 14pt;">Узнайте больше о выгодном шопинге с Картой №1* по&nbsp;<a href="https://lenta.com/karta1-old/">ссылке.</a></span></p>
+      </div>
+
+    </div>
+  </div>
+
+
+</div><div class="block mainsiterichtextblock col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
+
+  <div class="message-text-block">
+    <p><span style="font-size: 10pt;">*№1 по количеству покупателей, считающих, что карта магазина &laquo;ЛЕНТА&raquo; дает существенную экономию (опрос посетителей продовольственных магазинов в городах в городах присутствия &laquo;ЛЕНТЫ&raquo;, 2016-2020).</span></p>
+<p><span style="font-size: 10pt;">Скидки и начисление баллов не распространяются на покупку карт лояльности &laquo;Карта №1&raquo; и &laquo;ЛЕНТА-Райффайзенбанк&raquo;, подарочных карт &laquo;ЛЕНТА&raquo;, а также товаров, стимулирование продаж которых запрещено законом. Скидки могут быть ограничены таким образом, чтобы цена товара со скидкой была не ниже нормативно установленной розничной цены. </span></p>
+  </div>
+</div><div class="block mainsiterichtextblock col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
+
+  <div class="message-text-block">
+    <p style="text-align: center;"><a class="link" href="https://lenta.com/globalassets/-7/Billa/Polozhenie_o_programme_loyalnosti_red4.pdf" target="_blank" rel="noopener"><strong><u><span style="font-size: 12pt;">Положение о программе лояльности в ООО &laquo;Лента-центр&raquo;</span></u></strong></a></p>
+<p><span style="font-size: 12pt;"><strong>Перечень третьих лиц, которым в ООО &laquo;Лента-Центр&raquo; может передать (кроме распространения) персональные данные или которым может поручить их обработку.</strong></span></p>
+<table style="width: 100%; border-collapse: collapse;" border="1" cellpadding="5px">
+<tbody>
+<tr style="background-color: #f2f2f2;">
+<td style="width: 50%; text-align: center;"><strong><span style="font-size: 14pt;">Наименование</span></strong></td>
+<td style="width: 50%; text-align: center;"><strong><span style="font-size: 14pt;">Цель обработки</span></strong></td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;"><span style="font-size: 14pt;">ООО &laquo;Биорг&raquo;</span></td>
+<td style="width: 50%;"><span style="font-size: 14pt;">Хранение и обработка персональных данных для последующего ввода в единую систему.</span></td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;"><span style="font-size: 14pt;">ООО &laquo;Лента&raquo;</span></td>
+<td style="width: 50%;"><span style="font-size: 14pt;">Хранение и обработка персональных данных для последующего ввода в единую систему.</span></td>
+</tr>
+</tbody>
+</table>
+  </div>
+</div></div>
+
+  </article>
+
+
+        </main>
+
+        
+<footer class="footer page__footer">
+  <div
+    class="footer__top"
+    ga-on="show"
+    ga-event-category="migration:footer-nav"
+    ga-event-action="showFooter"
+  >
+    <div class="footer__menu">
+
+      <nav class="footer__main-nav main-nav">
+
+        <div class="footer__main-nav-repetition">
+
+          <div class="block dropdownblock col-lg-12 col-md-12 col-sm-12 col-xs-12 FromFooter footer__nav-item">  <div class="main-nav__item-label">
+
+      <a
+        ga-on="click"
+        ga-event-category="migration:footer-nav"
+        ga-event-action="goToPage"
+        ga-event-label="О компании"
+        ga-event-non-interaction="false"
+        href="https://lenta.com/o-kompanii/"
+        class="main-nav__item-link"
+        
+        native>
+        О компании
+        <div class="main-nav__toggle-icon">
+          <svg class="icon "><use xlink:href="#chevron-up"></use></svg>
+        </div>
+      </a>
+  </div>
+    <div class="main-nav__item-select">
+
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Информация"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/o-kompanii/klyuchevye-fakty/"
+          class="main-nav__item-option"
+          
+          native>
+          Информация
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Магазины"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/allmarkets/"
+          class="main-nav__item-option"
+          
+          native>
+          Магазины
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Вакансии"
+          ga-event-non-interaction="false"
+          href="https://career.lenta.com/"
+          class="main-nav__item-option"
+          target = _blank
+          native>
+          Вакансии
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Контакты"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/kontakty/"
+          class="main-nav__item-option"
+          
+          native>
+          Контакты
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Горячая линия Комитета по этике"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/o-kompanii/eticheskiykomitet/"
+          class="main-nav__item-option"
+          target = _blank
+          native>
+          Горячая линия Комитета по этике
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Противодействие коррупции"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/o-kompanii/eticheskiykomitet/"
+          class="main-nav__item-option"
+          target = _blank
+          native>
+          Противодействие коррупции
+        </a>
+
+    </div>
+</div>
+
+        </div>
+
+      </nav>
+
+      <nav class="footer__main-nav main-nav">
+
+        <div class="footer__menu-nav-repetition">
+
+          <div class="block dropdownblock col-lg-12 col-md-12 col-sm-12 col-xs-12 FromFooter footer__nav-item">  <div class="main-nav__item-label">
+
+      <a
+        ga-on="click"
+        ga-event-category="migration:footer-nav"
+        ga-event-action="goToPage"
+        ga-event-label="Покупателям"
+        ga-event-non-interaction="false"
+        href="https://lenta.com/pokupatelyam/"
+        class="main-nav__item-link"
+        
+        native>
+        Покупателям
+        <div class="main-nav__toggle-icon">
+          <svg class="icon "><use xlink:href="#chevron-up"></use></svg>
+        </div>
+      </a>
+  </div>
+    <div class="main-nav__item-select">
+
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Карта покупателя"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/pokupatelyam/karta-pokupatelya/"
+          class="main-nav__item-option"
+          
+          native>
+          Карта покупателя
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Подарочные карты"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/gift-cards/"
+          class="main-nav__item-option"
+          
+          native>
+          Подарочные карты
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Акции"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/goods-actions/"
+          class="main-nav__item-option"
+          
+          native>
+          Акции
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Онлайн-заказы"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/pokupatelyam/online-sale/"
+          class="main-nav__item-option"
+          
+          native>
+          Онлайн-заказы
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Помощь покупателю"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/pokupatelyam/chasto-zadavaemye-voprosy-i-obratnaya-svyaz/"
+          class="main-nav__item-option"
+          
+          native>
+          Помощь покупателю
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Не нашли товар (опрос)"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/landings/opros_assortiment/"
+          class="main-nav__item-option"
+          target = _blank
+          native>
+          Не нашли товар (опрос)
+        </a>
+
+    </div>
+</div>
+
+        </div>
+
+      </nav>
+
+      <nav class="footer__main-nav main-nav">
+
+        <div class="footer__menu-nav-repetition">
+
+          <div class="block dropdownblock col-lg-12 col-md-12 col-sm-12 col-xs-12 FromFooter footer__nav-item">  <div class="main-nav__item-label">
+
+      <a
+        ga-on="click"
+        ga-event-category="migration:footer-nav"
+        ga-event-action="goToPage"
+        ga-event-label="Партнёрам"
+        ga-event-non-interaction="false"
+        href="https://lenta.com/yuridicheskim-litsam/"
+        class="main-nav__item-link"
+        
+        native>
+        Партнёрам
+        <div class="main-nav__toggle-icon">
+          <svg class="icon "><use xlink:href="#chevron-up"></use></svg>
+        </div>
+      </a>
+  </div>
+    <div class="main-nav__item-select">
+
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Поставщикам"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/postavshchikam/"
+          class="main-nav__item-option"
+          
+          native>
+          Поставщикам
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Реклама в &#171;Ленте&#187;"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/reklamodatelyam/"
+          class="main-nav__item-option"
+          
+          native>
+          Реклама в &#171;Ленте&#187;
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Арендаторам"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/arendatoram1/"
+          class="main-nav__item-option"
+          
+          native>
+          Арендаторам
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Предложить помещение в аренду"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/to-landlords/"
+          class="main-nav__item-option"
+          
+          native>
+          Предложить помещение в аренду
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Лента PRO для бизнеса"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/pro/"
+          class="main-nav__item-option"
+          target = _blank
+          native>
+          Лента PRO для бизнеса
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Лента ОПТ"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/optovikam/"
+          class="main-nav__item-option"
+          target = _blank
+          native>
+          Лента ОПТ
+        </a>
+        <a
+          ga-on="click"
+          ga-event-category="migration:footer-nav"
+          ga-event-action="goToPage"
+          ga-event-label="Подарочные карты &#171;Лента&#187; для бизнеса"
+          ga-event-non-interaction="false"
+          href="https://lenta.com/gift-cards/podarochnaya-karta/informatsiya-dlya-yuridicheskikh-lits/"
+          class="main-nav__item-option"
+          target = _blank
+          native>
+          Подарочные карты &#171;Лента&#187; для бизнеса
+        </a>
+
+    </div>
+</div>
+
+        </div>
+
+      </nav>
+    </div>
+    <div class="footer__contact-block footer__nav-item main-nav">
+      <div class="footer__apps footer__item">
+        <div class="main-nav__item-link">
+          <div class="main-nav__item-label">
+            Скачайте приложение
+          </div>
+        </div>
+        <div class="footer__mobile-apps">
+          <a
+            ga-on="click"
+            ga-event-category="goToAppShop"
+            ga-event-action="click"
+            ga-event-label="App Store"
+            ga-event-non-interaction="false"
+            class="button button--link footer__mobile-app footer__mobile-app--app_store"
+            target="_blank"
+            href="https://redirect.appmetrica.yandex.com/serve/748693644952765996?utm_source=lenta_com&amp;utm_medium=web&amp;utm_campaign=store_image&amp;reff=lk"
+          >
+            <svg class="icon footer__mobile-app-icon"><use xlink:href="#app-store"></use></svg>
+            App Store
+          </a>
+          <a
+            ga-on="click"
+            ga-event-category="goToAppShop"
+            ga-event-action="click"
+            ga-event-label="Google Play"
+            ga-event-non-interaction="false"
+            class="button button--link footer__mobile-app footer__mobile-app--google_play"
+            target="_blank"
+            href="https://redirect.appmetrica.yandex.com/serve/748693644952765996?utm_source=lenta_com&amp;utm_medium=web&amp;utm_campaign=store_image&amp;reff=lk"
+          >
+            <svg class="icon footer__mobile-app-icon footer__mobile-app-icon--google-play"><use xlink:href="#google-play-color"></use></svg>
+            Google Play
+          </a>
+          <a
+            ga-on="click"
+            ga-event-category="goToAppShop"
+            ga-event-action="click"
+            ga-event-label="AppGallery"
+            ga-event-non-interaction="false"
+            class="button button--link footer__mobile-app footer__mobile-app--app-gallery"
+            target="_blank"
+            href="https://redirect.appmetrica.yandex.com/serve/748693644952765996?utm_source=lenta_com&amp;utm_medium=web&amp;utm_campaign=store_image&amp;reff=lk"
+          >
+            <svg class="icon footer__mobile-app-icon footer__mobile-app-icon--app-gallery"><use xlink:href="#appgallery"></use></svg>
+            AppGallery
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__social footer__item">
+        <div class="main-nav__item-link">
+          <div class="main-nav__item-label">
+            Мы в социальных сетях
+          </div>
+        </div>
+        <ul class="social-panel footer__subscribe-panel">
+          <li class="block linkedimageblock col-lg-12 col-md-12 col-sm-12 col-xs-12  footer__social-panel-item"><a ga-on="click"
+   ga-event-category="all-site:footer"
+   ga-event-action="goToSocial"
+   ga-event-label="https://vk.com/lentacom"
+   href="https://vk.com/lentacom"
+   class="linked-image"
+     target="_blank" rel="noopener"  >
+  <img src="https://lenta.servicecdn.ru/globalassets/site-logos-and-icons/icon_vk2.png"  />
+</a>
+</li><li class="block linkedimageblock col-lg-12 col-md-12 col-sm-12 col-xs-12  footer__social-panel-item"><a ga-on="click"
+   ga-event-category="all-site:footer"
+   ga-event-action="goToSocial"
+   ga-event-label="https://ok.ru/group/53286834208943"
+   href="https://ok.ru/group/53286834208943"
+   class="linked-image"
+     target="_blank" rel="noopener"  >
+  <img src="https://lenta.servicecdn.ru/globalassets/site-logos-and-icons/icon_odnoklassniki2.png"  />
+</a>
+</li><li class="block linkedimageblock col-lg-12 col-md-12 col-sm-12 col-xs-12  footer__social-panel-item"><a ga-on="click"
+   ga-event-category="all-site:footer"
+   ga-event-action="goToSocial"
+   ga-event-label="https://t.me/Lentacom"
+   href="https://t.me/Lentacom"
+   class="linked-image"
+     target="_blank" rel="noopener"  >
+  <img src="https://lenta.servicecdn.ru/globalassets/site-logos-and-icons/icon_telegram2.png"  />
+</a>
+</li>
+        </ul>
+      </div>
+
+      <div class="footer__feedback footer__item">
+        <a href="#" class="footer__feedback-button js-feedback-button" tabindex="-1">
+          <svg class="icon footer__feedback-icon"><use xlink:href="#thumb-up-filled"></use></svg>
+          Оцените работу сайта
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="footer__policy-info">
+      <div class="footer__logo" style="background: url(https://lenta.com/globalassets/site-logos-and-icons/logo_footer_new_brandbook.svg)"></div>
+      <div>
+        <p class="footer__copyright footer__copyright--desktop">
+          &#169; 2024 Lenta.com ООО &#171;Лента&#187; / Адрес 197374 г. Санкт-Петербург, ул. Савушкина, д.112, Литера Б. ИНН 7814148471 &#183; ОГРН 1037832048605
+        </p>
+        <div class="footer__policy">
+                      <a href="https://lenta.com/pokupatelyam/privacy-policy/" class="footer__policy-link">
+              Политика обработки персональных данных
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__connection">
+      <div class="footer__contact">
+
+        <p class="footer__contact-label">
+          Центр поддержки клиентов
+        </p>
+
+        <a class="footer__contact-tel" href="tel:88007004111">
+          <svg class="icon footer__contact-tel-icon"><use xlink:href="#telephone"></use></svg>
+          <pre class="footer__contact-tel-code">8 800 </pre>
+          <pre class="footer__contact-tel-number">700 4 111</pre>
+        </a>
+
+        <ul class="social-panel footer__chatbot">
+<li class="block linkedimageblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <a ga-on="click"
+     ga-event-category="all-site:footer"
+     ga-event-action="chatBot"
+     ga-event-label="Telegram"
+     ga-event-non-interaction="false"
+     href="https://t.me/LENTAcompany_bot"
+     class="linked-image"
+       target="_blank" rel="noopener"  >
+    <img src="https://lenta.servicecdn.ru/globalassets/1/-4/logo-1.png"   alt="Чат-бот в Telegram"   />
+  </a>
+</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <p class="footer__copyright footer__copyright--mobile">
+      &#169; 2024 Lenta.com ООО &#171;Лента&#187; / Адрес 197374 г. Санкт-Петербург, ул. Савушкина, д.112, Литера Б. ИНН 7814148471 &#183; ОГРН 1037832048605
+    </p>
+  </div>
+</footer>
+
+<script>
+  var observeAppsFlyerCallback = (mutationList, observer) => {
+    for (const mutation of mutationList) {
+      if (mutation.type === "childList") {
+        var appsFlyerBanner = document.querySelector("[data-af-cta-button]");
+
+        if (appsFlyerBanner) {
+          dataLayer.push({
+            'event': 'eventTracking',
+            'category': 'migration:fullscreen',
+            'action': 'showBanner',
+            'label': 'Просмотр баннера AppsFlyer',
+          });
+
+          document.body.querySelector("[data-af-cta-button]").addEventListener("click", () => {
+            dataLayer.push({
+              'event': 'eventTracking',
+              'category': 'migration:fullscreen',
+              'action': 'clickBanner',
+              'label': 'Переход по баннеру AppsFlyer',
+            });
+          });
+
+          document.body.querySelector("[data-af-close-button]").addEventListener("click", () => {
+            dataLayer.push({
+              'event': 'eventTracking',
+              'category': 'migration:fullscreen',
+              'action': 'closeBanner',
+              'label': 'Закрытие баннера AppsFlyer',
+            });
+          });
+
+          observeAppsFlyerObserver.disconnect();
+        }
+      }
+    }
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.innerWidth <= 768 && dataLayer) {
+      var observeAppsFlyerTargetNode = document.body;
+      var observeAppsFlyerConfig = { childList: true, subtree: true };
+      var observeAppsFlyerObserver = new MutationObserver(observeAppsFlyerCallback);
+
+      observeAppsFlyerObserver.observe(observeAppsFlyerTargetNode, observeAppsFlyerConfig);
+
+      setTimeout(() => {
+        observeAppsFlyerObserver.disconnect();
+      }, 15000);
+    }
+  });
+</script>
+
+
+
+        <div class="branding">
+          
+
+          
+
+        </div>
+
+      </div><!-- .page -->
+    </div><!-- .scroll-lock__inner .page-wrap -->
+
+
+    <a href="#" class="page-up-link" tabindex="-1">
+      <svg class="icon "><use xlink:href="#scroll-back"></use></svg>
+    </a>
+    <div class="modals-container"></div>
+  </div><!-- .scroll-lock -->
+
+  <div class="js-cookie-usage-notice-wrapper">
+    
+
+    
+
+  </div>
+
+  <script src="https://lenta.servicecdn.ru/static/dasProd.f0915dda096809bcd938.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/vendor.0431e4a39425c7f54940.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/lib.344a11bbf7ac574e09e0.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/base.19ceb7d849341085deb8.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/main.4d5f9576dbece1402204.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/migration.9a3aa013fa10afa33c17.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/catalog.f5fc69bfaf8d794fb267.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/loyalty.0712a50b9080f7f16135.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/recipes.f9b547651d03a11de031.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/stamps.6df6196b5b511fe6d8d6.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/newLogin.ded300be2c60a1d4f1c1.js"></script>
+  <script defer src="https://lenta.servicecdn.ru/static/proRegistration.85bc75e89c25d6fa6a2e.js"></script>
+</body>
+</html>
